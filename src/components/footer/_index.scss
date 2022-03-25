@@ -35,5 +35,28 @@
         height: 30px;
       }
     }
+    p {
+        text-align: end;
+    }
   }
+}
+
+@media only screen and(max-width:768px) {
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        align-items: center;
+        padding: 0;
+        padding-top: 10px;
+        .logo-div {
+            text-align: center;
+        }
+        .social-media-box {
+            .social-media-icons {
+                justify-content: center;
+            }
+        }
+    }
+
 }
