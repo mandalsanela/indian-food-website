@@ -111,7 +111,9 @@ const HomePage = () => {
             <img src={ThirdCardPicture} className="card-pic" />
             <div className="card-content">
               <div className="card-title">
-                <h2>Pellentesque libero tempor vel nec nulla odio vulputate ut.</h2>
+                <h2>
+                  Pellentesque libero tempor vel nec nulla odio vulputate ut.
+                </h2>
               </div>
               <p className="card-time">Varje tisdag | 15:00 - 20:00</p>
               <hr size="1" />
@@ -126,7 +128,9 @@ const HomePage = () => {
           <FoodCard width="318px" height="289px">
             <div className="card-content">
               <div className="card-title">
-                <h2>Sed risus at consectetur vitae ut mauris scelerisque nullam.</h2>
+                <h2>
+                  Sed risus at consectetur vitae ut mauris scelerisque nullam.
+                </h2>
               </div>
               <p className="card-time">Varje tisdag | 15:00 - 20:00</p>
               <hr size="1" />
