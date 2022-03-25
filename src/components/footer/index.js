@@ -12,23 +12,25 @@ const Footer = () => {
   };
   return (
     <div className="footer-wrapper">
-      <div className="logo-div">
-        <img src={IndianPalace} className="logo" />
-      </div>
-      <div className="back-to-top-wrapper">
-        <img
-          src={BackToTopIcon}
-          className="back-to-top"
-          onClick={scrollToTop}
-        />
-        <p>Denna hemsida är skapad med hemsida är skapad</p>
-      </div>
-      <div className="social-media-box">
-        <div className="social-media-icons">
-          <img src={InstagramIcon} />
-          <img src={FacebookIcon} />
+      <div className="footer-content">
+        <div className="logo-div">
+          <img src={IndianPalace} className="logo" />
         </div>
-        <p>© Indian Food Website 2022 • All rights reserved.</p>
+        <div className="back-to-top-wrapper">
+          <img
+            src={BackToTopIcon}
+            className="back-to-top"
+            onClick={scrollToTop}
+          />
+          <p>Denna hemsida är skapad med hemsida är skapad</p>
+        </div>
+        <div className="social-media-box">
+          <div className="social-media-icons">
+            <img src={InstagramIcon} />
+            <img src={FacebookIcon} />
+          </div>
+          <p>© Indian Food Website 2022 • All rights reserved.</p>
+        </div>
       </div>
     </div>
   );
