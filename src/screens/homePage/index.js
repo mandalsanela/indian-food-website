@@ -11,6 +11,8 @@ import FoodIcon from "../../assets/images/icons/food-icon.svg";
 import ArrowDown from "../../assets/images/icons/icon-arrow-down.svg";
 import ButtonYellow from "../../UI/buttonYellow";
 import EventsVector from "../../assets/images/events-vector.svg";
+import FoodCard from "../../components/foodCard";
+import FirstCardPicture from "../../assets/images/first-card.svg";
 
 const HomePage = () => {
   return (
@@ -61,8 +63,25 @@ const HomePage = () => {
       </div>
       <div className="events-section">
         <h1>Events</h1>
-        <p>Enim volutpat velit molestie morbi pharetra nam nisi et.</p>
+        <p className="subtitle">Enim volutpat velit molestie morbi pharetra nam nisi et.</p>
         <img src={EventsVector} />
+        <div className="food-cards">
+          <FoodCard width="318px" height="481px">
+            <img src={FirstCardPicture} className="card-pic" />
+            <div className="card-content">
+              <div className="card-title">
+                <h2>Libero commodo arcu elementum eget pharetra.</h2>
+              </div>
+              <p className="card-time">Varje tisdag | 15:00 - 20:00</p>
+              <p className="card-text">
+                Sit pellentesque a at eros, nisl etiam. Nec, porttitor turpis
+                vel penatibus dignissim non a mauris. Sed eget ipsum eu ipsum
+                convallis vivamus sed ornare mi urna ne.
+              </p>
+              <button className="card-button">Läs mer</button>
+            </div>
+          </FoodCard>
+        </div>
       </div>
       <Footer />
     </div>

@@ -109,8 +109,11 @@
     display: flex;
     flex-direction: column;
     color: white;
-    text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
+    .subtitle {
+      text-align: center;
+    }
     h1 {
       font-family: Libre Caslon Text;
       font-weight: 400;
@@ -119,6 +122,7 @@
       line-height: 48px;
       margin: 0;
       padding: 0;
+      text-align: center;
     }
     p {
       font-family: IBM Plex Sans;
@@ -131,6 +135,50 @@
       width: 160px;
       height: 15px;
       align-self: center;
+    }
+    .card-pic {
+      width: 318px;
+      height: 192px;
+    }
+    .card-content {
+      align-items: center;
+      padding: 20px;
+      .card-title {
+        width: 278px;
+        height: 48px;
+        text-align: left;
+        h2 {
+          font-family: Libre Caslon Text;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 16px;
+          line-height: 24px;
+          color: #caab2a;
+        }
+      }
+      .card-time {
+        font-family: IBM Plex Sans;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 16px;
+      }
+      .card-text {
+        font-family: IBM Plex Sans;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .card-button {
+        width: 278px;
+        height: 44px;
+        padding: 12px 8px 12px 8px;
+        background-color: #caab2a;
+        border: none;
+        outline: none;
+        text-align: center;
+      }
     }
   }
 }
