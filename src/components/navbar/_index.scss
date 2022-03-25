@@ -1,0 +1,293 @@
+.topnav {
+  box-sizing: border-box;
+  //   background-color: black;
+  //   color: white;
+  width: 100vw;
+  background-color: transparent;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 0 10vw;
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    height: 120px;
+    width: 125px;
+    margin: 0 45px;
+  }
+  .navlink {
+    color: black;
+    text-decoration: none;
+    padding: 4px 32px;
+    cursor: pointer;
+    align-self: center;
+    &:hover {
+      text-decoration: none;
+      color: gray;
+    }
+    .row-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  .mobile {
+    display: none;
+  }
+  .backdrop {
+    display: none;
+  }
+
+  @media only screen and(max-width:1220px) {
+    .nav-links {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+      z-index: 2;
+      width: 28px;
+      height: 19px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+      margin-left: 15px;
+      .bar {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        border-radius: 100px;
+        transition: all 0.2s ease;
+      }
+      &.open {
+        .bar {
+          &:nth-child(1) {
+            transform: rotate(47deg);
+            transform-origin: 10% 30%;
+            height: 2px;
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            transform: rotate(-50deg);
+            transform-origin: 10% 20%;
+            height: 2px;
+          }
+        }
+      }
+    }
+    .mobile {
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 3;
+      width: 100%;
+      max-width: 200px;
+      height: 100%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+      transition: all 0.2s ease-in-out;
+      align-items: flex-start;
+      width: auto;
+      .navlink {
+        margin: 3px 0;
+        padding: 3px 30px;
+        align-self: flex-end;
+        margin-right: 5px;
+      }
+
+      &.closed {
+        max-width: 0;
+      }
+    }
+    .backdrop {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.2);
+      display: block;
+    }
+  }
+  @media only screen and(max-width:500px) {
+    .nav-links {
+      display: none;
+    }
+    .info-mail {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+      z-index: 2;
+      width: 28px;
+      height: 19px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+      margin-left: 15px;
+      .bar {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        border-radius: 100px;
+        transition: all 0.2s ease;
+      }
+      &.open {
+        .bar {
+          &:nth-child(1) {
+            transform: rotate(47deg);
+            transform-origin: 10% 30%;
+            height: 2px;
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            transform: rotate(-50deg);
+            transform-origin: 10% 20%;
+            height: 2px;
+          }
+        }
+      }
+    }
+    .mobile {
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 3;
+      width: 100%;
+      max-width: 200px;
+      height: 100%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      /* padding-top: 65px; */
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+      transition: all 0.2s ease-in-out;
+      align-items: flex-start;
+      width: auto;
+      .navlink {
+        margin: 3px 0;
+        padding: 3px 30px;
+        align-self: flex-end;
+        margin-right: 5px;
+      }
+      &.closed {
+        max-width: 0;
+      }
+    }
+    .backdrop {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.2);
+      display: block;
+    }
+  }
+  @media only screen and(max-width:280px) {
+    .nav-links {
+      display: none;
+    }
+    .info-mail {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+      z-index: 2;
+      width: 28px;
+      height: 19px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+      margin-left: 15px;
+      .bar {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        border-radius: 100px;
+        transition: all 0.2s ease;
+      }
+      &.open {
+        .bar {
+          &:nth-child(1) {
+            transform: rotate(51deg);
+            transform-origin: 10% 30%;
+            height: 2px;
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            transform: rotate(-52deg);
+            transform-origin: 11% 20%;
+            height: 2px;
+          }
+        }
+      }
+    }
+    .mobile {
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 3;
+      width: 100%;
+      max-width: 200px;
+      height: 100%;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      /* padding-top: 65px; */
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+      transition: all 0.2s ease-in-out;
+      align-items: flex-start;
+      width: auto;
+      .navlink {
+        margin: 3px 0;
+        padding: 3px 30px;
+        align-self: flex-end;
+        margin-right: 5px;
+      }
+      &.closed {
+        max-width: 0;
+      }
+    }
+    .backdrop {
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.2);
+      display: block;
+    }
+  }
+}
