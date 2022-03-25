@@ -1,14 +1,82 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import IndianPalace from "../../assets/images/indian-palace.svg";
+import React, { useState, useEffect } from "react";
+import Logo from "../../assets/images/indian-palace.svg";
+import { useLocation } from "react-router";
 
-function Navbar() {
+function NavBar() {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, [location, location.pathname]);
+
+  const renderLinks = (change) => {
+    return (
+      <>
+        <a
+          className="navlink"
+          href="/"
+          onClick={() => {
+            change == false && setOpen(false);
+          }}
+        >
+          HOME
+        </a>
+        <a
+          className="navlink"
+          href="/"
+          onClick={() => {
+            change == false && setOpen(false);
+          }}
+        >
+          GALLERY
+        </a>
+        <a
+          className="navlink"
+          href="/"
+          onClick={() => {
+            change == false && setOpen(false);
+          }}
+        >
+          RESTAURANTS
+        </a>
+        <a href="/" className="a-logo">
+              <img className="logo" src={Logo} alt="logo img"></img>
+            </a>
+        <a
+          className="navlink"
+          href="/"
+          onClick={() => {
+            change == false && setOpen(false);
+          }}
+        >
+          HISTORY
+        </a>
+        <a
+          className="navlink"
+          href="/"
+          onClick={() => {
+            change == false && setOpen(false);
+          }}
+        >
+          ABOUT US
+        </a>
+        <a
+          className="navlink"
+          href="/"
+          onClick={() => {
+            change == false && setOpen(false);
+          }}
+        >
+          CONTACT
+        </a>
+      </>
+    );
+  };
   return (
     <div>
       <div
         style={{
-          height: "60px",
+          height: "40px",
           width: "100%",
         }}
       ></div>
@@ -16,31 +84,8 @@ function Navbar() {
         {open && (
           <div className="backdrop" onClick={() => setOpen(false)}></div>
         )}
-        <div className="nav-links row">
-          <Link className="navlink" to="/">
-            HOME
-          </Link>
-          <Link className="navlink" to="/">
-            GALLERY
-          </Link>
-          <Link className="navlink" to="/">
-            RESTAURANTS
-          </Link>
-          <div className="row">
-          <Link to="/">
-            <img className="logo" src={IndianPalace} alt="logo img"></img>
-          </Link>
-        </div>
-          <Link className="navlink" to="/">
-            HISTORY
-          </Link>
-          <Link className="navlink" to="/">
-            ABOUT US
-          </Link>
-          <Link className="navlink" to="/">
-            CONTACT
-          </Link>
-        </div>
+        <div className="nav-links row">{renderLinks()}</div>
+
         <div className={open ? "mobile " : "mobile closed"}>
           <div
             className="row"
@@ -48,63 +93,19 @@ function Navbar() {
               width: "100%",
               marginBottom: "60px",
             }}
-          >
-            <div
-              className={open ? "hamburger open" : "hamburger"}
-              onClick={() => setOpen(!open)}
-              style={{
-                marginLeft: "auto",
-                marginTop: "10px",
-                marginRight: "20px",
-              }}
-            >
-              <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div>
-            </div>
-          </div>
-          <Link className="navlink" to="/" onClick={() => setOpen(false)}>
-            HOME
-          </Link>
-          <Link
-            className="navlink"
-            to="/"
-            onClick={() => setOpen(false)}
-          >
-            GALLERY
-          </Link>
-          <Link className="navlink" to="/" onClick={() => setOpen(false)}>
-            RESTAURANTS
-          </Link>
-          <Link className="navlink" to="/" onClick={() => setOpen(false)}>
-            HISTORY
-          </Link>
-          <Link
-            className="navlink"
-            to="/"
-            onClick={() => setOpen(false)}
-          >
-            ABOUT US
-          </Link>
-          <Link
-            className="navlink"
-            to="/"
-            onClick={() => setOpen(false)}
-          >
-            CONTACT
-          </Link>
+          ></div>
+
+          {renderLinks(false)}
         </div>
         <div
           className={open ? "hamburger open" : "hamburger"}
           onClick={() => setOpen(!open)}
         >
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
+          <span></span>
         </div>
       </div>
     </div>
   );
 }
 
-export default Navbar;
+export default NavBar;
