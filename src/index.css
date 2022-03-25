@@ -44,6 +44,7 @@
 .footer-wrapper .back-to-top-wrapper .back-to-top {
   width: 32px;
   height: 32px;
+  cursor: pointer;
 }
 
 .footer-wrapper .social-media-box {
@@ -203,7 +204,7 @@
   .topnav .hamburger .bar {
     width: 100%;
     height: 3px;
-    background-color: black;
+    background-color: white;
     border-radius: 100px;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
@@ -234,7 +235,7 @@
     width: 100%;
     max-width: 200px;
     height: 100%;
-    background-color: white;
+    background-color: black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -333,7 +334,7 @@
     width: 100%;
     max-width: 200px;
     height: 100%;
-    background-color: white;
+    background-color: black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -377,9 +378,6 @@
   .topnav .nav-links {
     display: none;
   }
-  .topnav .info-mail {
-    display: none;
-  }
   .topnav .hamburger {
     display: block;
     z-index: 2;
@@ -402,7 +400,7 @@
   .topnav .hamburger .bar {
     width: 100%;
     height: 3px;
-    background-color: black;
+    background-color: white;
     border-radius: 100px;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
@@ -433,7 +431,7 @@
     width: 100%;
     max-width: 200px;
     height: 100%;
-    background-color: white;
+    background-color: black;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
