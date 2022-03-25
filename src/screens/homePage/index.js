@@ -4,6 +4,7 @@ import HeaderPic1 from "../../assets/images/header-v1.svg";
 import HeaderPic2 from "../../assets/images/header-v2.svg";
 import Ellipse1 from "../../assets/images/ellipse1.svg";
 import Ellipse2 from "../../assets/images/ellipse2.svg";
+import Footer from "../../components/footer";
 const HomePage = () => {
   return (
     <div className="homepage-wrapper">
@@ -20,6 +21,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
