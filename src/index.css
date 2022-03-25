@@ -1,6 +1,7 @@
 .topnav {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: white;
   width: 100vw;
   background-color: transparent;
   height: 200px;
@@ -37,7 +38,7 @@
 }
 
 .topnav .navlink {
-  color: black;
+  color: white;
   text-decoration: none;
   padding: 4px 32px;
   cursor: pointer;
@@ -373,8 +374,94 @@
 }
 
 .homepage-wrapper {
-  background-color: lightblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100%;
+}
+
+.homepage-wrapper .header-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./assets/images/header-background.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homepage-wrapper .header-wrapper .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homepage-wrapper .header-wrapper .header-content .header-pic1 {
+  width: 200px;
+  height: 18px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.homepage-wrapper .header-wrapper .header-content .header-pic2 {
+  width: 200px;
+  height: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.homepage-wrapper .header-wrapper .header-content .title {
+  width: 700px;
+  font-size: 88px;
+  font-weight: bold;
+  line-height: 96px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: Libre Caslon Text;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.homepage-wrapper .header-wrapper .ellipse-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.homepage-wrapper .header-wrapper .ellipse-row img {
+  width: 16px;
+  height: 16px;
+  margin: 0 7px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=index.css.map */
