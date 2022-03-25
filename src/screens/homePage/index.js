@@ -10,6 +10,7 @@ import LocationIcon from "../../assets/images/icons/location-icon.svg";
 import FoodIcon from "../../assets/images/icons/food-icon.svg";
 import ArrowDown from "../../assets/images/icons/icon-arrow-down.svg";
 import ButtonYellow from "../../UI/buttonYellow";
+import EventsVector from "../../assets/images/events-vector.svg";
 
 const HomePage = () => {
   return (
@@ -57,6 +58,11 @@ const HomePage = () => {
             </ButtonYellow>
           </div>
         </ButtonGrey>
+      </div>
+      <div className="events-section">
+        <h1>Events</h1>
+        <p>Enim volutpat velit molestie morbi pharetra nam nisi et.</p>
+        <img src={EventsVector} />
       </div>
       <Footer />
     </div>
