@@ -583,25 +583,64 @@
       align-self: center;
 }
 
-.homepage-wrapper .events-section .card-pic {
+.homepage-wrapper .events-section .food-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 70px;
+}
+
+.homepage-wrapper .events-section .food-cards .btn-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homepage-wrapper .events-section .food-cards .btn-row button {
+  width: 130px;
+  height: 44px;
+  padding: 12px 8px 12px 8px;
+  background-color: #caab2a;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+.homepage-wrapper .events-section .food-cards .card-pic {
   width: 318px;
   height: 192px;
 }
 
-.homepage-wrapper .events-section .card-content {
+.homepage-wrapper .events-section .food-cards .card-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
+  padding: 0 20px;
+  padding-bottom: 10px;
 }
 
-.homepage-wrapper .events-section .card-content .card-title {
+.homepage-wrapper .events-section .food-cards .card-content .card-title {
   width: 278px;
   height: 48px;
   text-align: left;
 }
 
-.homepage-wrapper .events-section .card-content .card-title h2 {
+.homepage-wrapper .events-section .food-cards .card-content .card-title h2 {
   font-family: Libre Caslon Text;
   font-weight: 500;
   font-style: normal;
@@ -610,7 +649,7 @@
   color: #caab2a;
 }
 
-.homepage-wrapper .events-section .card-content .card-time {
+.homepage-wrapper .events-section .food-cards .card-content .card-time {
   font-family: IBM Plex Sans;
   font-weight: 700;
   font-style: normal;
@@ -618,7 +657,7 @@
   line-height: 16px;
 }
 
-.homepage-wrapper .events-section .card-content .card-text {
+.homepage-wrapper .events-section .food-cards .card-content .card-text {
   font-family: IBM Plex Sans;
   font-weight: 400;
   font-style: normal;
@@ -626,7 +665,7 @@
   line-height: 20px;
 }
 
-.homepage-wrapper .events-section .card-content .card-button {
+.homepage-wrapper .events-section .food-cards .card-content .card-button {
   width: 278px;
   height: 44px;
   padding: 12px 8px 12px 8px;
