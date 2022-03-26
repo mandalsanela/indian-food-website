@@ -403,6 +403,90 @@
       }
     }
   }
+  .about-us-section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 70px;
+    .subtitle {
+      text-align: center;
+    }
+    h1 {
+      font-family: Libre Caslon Text;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+      line-height: 48px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    p {
+      font-family: IBM Plex Sans;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    img {
+      width: 160px;
+      height: 15px;
+      align-self: center;
+    }
+    .line {
+      width: 60px;
+      height: 2px;
+    }
+    .about-us-content {
+      display: flex;
+      flex-direction: row;
+      margin-top: 20px;
+      justify-content: space-between;
+      h3,
+      p {
+        padding: 0;
+        margin: 0;
+      }
+      .about-us-picture {
+        width: 680px;
+        height: 554px;
+      }
+      .about-title {
+        font-family: Libre Caslon Text;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 32px;
+        line-height: 40px;
+        color: #caab2a;
+        width: 207px;
+      }
+      .about-text {
+        font-family: IBM Plex Sans;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 28px;
+        width: 432px;
+      }
+      .about-us-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .left-text {
+          width: 432px;
+          height: 315px;
+        }
+      }
+      .about-us-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+  }
 }
 
 @media only screen and(max-width:1230px) {
@@ -437,6 +521,12 @@
         .history-card {
           margin-bottom: 15px;
         }
+      }
+    }
+    .about-us-section {
+      .about-us-content {
+        display: flex;
+        flex-direction: column;
       }
     }
   }
