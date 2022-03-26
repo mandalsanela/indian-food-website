@@ -203,6 +203,131 @@
       }
     }
   }
+  .our-location {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 70px;
+    .subtitle {
+      text-align: center;
+    }
+    h1 {
+      font-family: Libre Caslon Text;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+      line-height: 48px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    p {
+      font-family: IBM Plex Sans;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    img {
+      width: 160px;
+      height: 15px;
+      align-self: center;
+    }
+    .location-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 20px;
+      .card-pic {
+        width: 660px;
+        height: 280px;
+      }
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        h4 {
+          font-family: IBM Plex Sans;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 12px;
+          line-height: 15px;
+        }
+        .card-title {
+          color:#caab2a;
+          font-family: Libre Caslon Text;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 24px;
+          line-height: 30px;
+          h2 {
+            margin: 0;
+          }
+        }
+        .card-subtitle {
+          font-family: IBM Plex Sans;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 14px;
+          line-height: 24px;
+          width: 564px;
+        }
+        .location-row {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .loc-elements {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            p {
+              font-size: 14px;
+            }
+            .loc-elem-pic {
+              width: 12px;
+              height: 14px;
+              margin-right: 5px;
+            }
+          }
+        }
+        .location-opening-hours {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .loc-elem-pic {
+            width: 12px;
+            height: 14px;
+            margin-right: 5px;
+          }
+          .divider {
+            width: 460px;
+            margin-left: 15px;
+          }
+        }
+        .hours {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .elements {
+            display: flex;
+            flex-direction: column;
+            width: 60px;
+            align-items: center;
+          }
+        }
+        .location-button {
+          width: 232px;
+          height: 56px;
+          padding: 16px;
+          background-color: #caab2a;
+          border: none;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and(max-width:1230px) {
@@ -214,6 +339,13 @@
     }
     .events-section {
       .food-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .our-location {
+      .location-cards {
         display: flex;
         flex-direction: column;
         align-items: center;

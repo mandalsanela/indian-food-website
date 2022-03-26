@@ -15,6 +15,9 @@ import FoodCard from "../../components/foodCard";
 import FirstCardPicture from "../../assets/images/first-card.svg";
 import SecondCardPicture from "../../assets/images/second-card.svg";
 import ThirdCardPicture from "../../assets/images/third-card.svg";
+import FirstLocation from "../../assets/images/location-first-card.svg";
+import SecondLocation from "../../assets/images/location-sec-card.svg";
+import Divider from "../../assets/images/divider.svg";
 
 const HomePage = () => {
   return (
@@ -140,6 +143,143 @@ const HomePage = () => {
                 convallis vivamus sed ornare mi urna ne.
               </p>
               <button className="card-button">Läs mer</button>
+            </div>
+          </FoodCard>
+        </div>
+      </div>
+      <div className="our-location">
+        <h1>Our locations</h1>
+        <p className="subtitle">
+          Tristique facilisi tortor egestas nulla id amet. Integer in{" "}
+        </p>
+        <img src={EventsVector} />
+        <div className="location-cards">
+          <FoodCard width="660px" height="762px">
+            <img src={FirstLocation} className="card-pic" />
+            <div className="card-content">
+              <h4>RESTAURANT</h4>
+              <div className="card-title">
+                <h2>Restaurant Food</h2>
+              </div>
+              <p className="card-subtitle">
+                Cum pellentesque nisi sit facilisi suspendisse. Aliquet egestas
+                at morbi ultricies euismod scelerisque. Malesuada rhoncus
+                feugiat gravida adipiscing.
+              </p>
+              <div className="location-row">
+                <div className="loc-elements">
+                  <img src={LocationIcon} className="loc-elem-pic" />
+                  <p>Jean Street 21105</p>
+                </div>
+                <div className="loc-elements">
+                  <img src={LocationIcon} className="loc-elem-pic" />
+                  <p>email.address@gmail.com</p>
+                </div>
+                <div className="loc-elements">
+                  <img src={LocationIcon} className="loc-elem-pic" />
+                  <p>076 027 41 51</p>
+                </div>
+              </div>
+              <div className="location-opening-hours">
+                <img src={LocationIcon} className="loc-elem-pic" />
+                <p>Opening Hours </p>
+                <img src={Divider} className="divider" />
+              </div>
+              <div className="hours">
+                <div className="element">
+                  <p>MANDAG</p>
+                  <p>09:00 - 17:00</p>
+                </div>
+                <div className="element">
+                  <p>TISDAG</p>
+                  <p>09:00 - 17:00</p>
+                </div>
+                <div className="element">
+                  <p>ONSDAG</p>
+                  <p>09:00 - 17:00</p>
+                </div>
+                <div className="element">
+                  <p>TORSDAG</p>
+                  <p>09:00 - 17:00</p>
+                </div>
+                <div className="element">
+                  <p>FREDAG</p>
+                  <p>09:00 - 17:00</p>
+                </div>
+                <div className="element">
+                  <p>LORDAG</p>
+                  <p>09:00 - 17:00</p>
+                </div>
+                <div className="element">
+                  <p>SONDAG</p>
+                  <p>09:00 - 17:00</p>
+                </div>
+              </div>
+              <button className="location-button">VISA MENY</button>
+            </div>
+          </FoodCard>
+          <FoodCard width="660px" height="762px">
+            <img src={SecondLocation} className="card-pic" />
+            <div className="card-content">
+              <h4>KITCHEN</h4>
+              <div className="card-title">
+                <h2>Kitchen Food</h2>
+              </div>
+              <p className="card-subtitle">
+                Ante a lacus, amet proin. Auctor turpis fermentum posuere
+                tortor, diam sit cursus sit. Porttitor felis facilisis est amet,
+                adipiscing vitae. Ac justo, convallis sed.
+              </p>
+              <div className="location-row">
+                <div className="loc-elements">
+                  <img src={LocationIcon} className="loc-elem-pic" />
+                  <p>Downstreet 20152</p>
+                </div>
+                <div className="loc-elements">
+                  <img src={LocationIcon} className="loc-elem-pic" />
+                  <p>email.address@gmail.com</p>
+                </div>
+                <div className="loc-elements">
+                  <img src={LocationIcon} className="loc-elem-pic" />
+                  <p>076 512 51 12</p>
+                </div>
+              </div>
+              <div className="location-opening-hours">
+                <img src={LocationIcon} className="loc-elem-pic" />
+                <p>Opening Hours </p>
+                <img src={Divider} className="divider" />
+              </div>
+              <div className="hours">
+                <div className="element">
+                  <p>MANDAG</p>
+                  <p>09:00 - 17:00</p>
+                </div>
+                <div className="element">
+                  <p>TISDAG</p>
+                  <p>09:00 - 17:00</p>
+                </div>
+                <div className="element">
+                  <p>ONSDAG</p>
+                  <p>09:00 - 17:00</p>
+                </div>
+                <div className="element">
+                  <p>TORSDAG</p>
+                  <p>09:00 - 17:00</p>
+                </div>
+                <div className="element">
+                  <p>FREDAG</p>
+                  <p>09:00 - 17:00</p>
+                </div>
+                <div className="element">
+                  <p>LORDAG</p>
+                  <p>09:00 - 17:00</p>
+                </div>
+                <div className="element">
+                  <p>SONDAG</p>
+                  <p>09:00 - 17:00</p>
+                </div>
+              </div>
+              <button className="location-button">VISA MENY</button>
             </div>
           </FoodCard>
         </div>
