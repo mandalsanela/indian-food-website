@@ -25,6 +25,7 @@ import History3 from "../../assets/images/history3.svg";
 import AboutUs1 from "../../assets/images/aboutus1.svg";
 import AboutUs2 from "../../assets/images/aboutus2.svg";
 import Line from "../../assets/images/line.svg";
+import ContactForm from "../../components/contactForm";
 
 const HomePage = () => {
   return (
@@ -381,6 +382,7 @@ const HomePage = () => {
             <img src={AboutUs2} className="about-us-picture" />
           </div>
         </div>
+        <ContactForm />
       </div>
       <Footer />
     </div>
