@@ -1,5 +1,5 @@
 import React from "react";
-
+import LocationIcon from "../../assets/images/icons/location-icon.svg";
 const ContactForm = () => {
   return (
     <div className="contact-form-wrapper">
@@ -11,19 +11,20 @@ const ContactForm = () => {
           there for you! 👋
         </p>
         <button className="contact-button">
-            <p>hi</p>
+          <img src={LocationIcon} />
+          <p>Drabantvägen 4, 194 33 Upplands Väsby, Sverige</p>
         </button>
         <button className="contact-button">
-            <p>hi</p>
+        <img src={LocationIcon} />
+          <p>076 027 41 51</p>
         </button>
       </div>
       <div className="contact-right">
-          <input type="text" placeholder="Full Name" />
-          <input type="text" placeholder="Email Address" />
-          <input type="text" placeholder="Subject" />
-          <textarea placeholder="Message" rows="5"/>
-          <button>SUBMIT MESSAGE</button>
-
+        <input type="text" placeholder="Full Name" />
+        <input type="text" placeholder="Email Address" />
+        <input type="text" placeholder="Subject" />
+        <textarea placeholder="Message" rows="5" />
+        <button>SUBMIT MESSAGE</button>
       </div>
     </div>
   );
