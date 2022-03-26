@@ -1,0 +1,525 @@
+.homepage-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  .header-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/images/header-background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      .header-pic1 {
+        width: 200px;
+        height: 18px;
+        align-self: center;
+      }
+      .header-pic2 {
+        width: 200px;
+        height: 50px;
+        align-self: center;
+      }
+      .title {
+        width: 700px;
+        font-size: 88px;
+        font-weight: bold;
+        line-height: 96px;
+        text-align: center;
+        align-self: center;
+        font-family: Libre Caslon Text;
+        color: white;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    }
+    .ellipse-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 50px;
+      img {
+        width: 16px;
+        height: 16px;
+        margin: 0 7px;
+      }
+    }
+  }
+  .buttons-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -7%;
+    img {
+      width: 58px;
+      height: 58px;
+    }
+    .right {
+      margin-left: 20px;
+      h1 {
+        font-size: 14px;
+        font-family: IBM Plex Sans;
+      }
+      h3 {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      p {
+        font-size: 20px;
+        font-family: Libre Caslon Text;
+        font-style: normal;
+      }
+      .cselect {
+        display: flex;
+        flex-direction: row;
+        background-color: #caab2a;
+        align-items: center;
+        padding: 12px 12px 12px 16px;
+        width: 232px;
+        height: 48px;
+        justify-content: space-around;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+        select {
+          border: none;
+          outline: none;
+          background-color: transparent;
+          font-family: Libre Caslon Text;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          appearance: none;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  .events-section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .subtitle {
+      text-align: center;
+    }
+    h1 {
+      font-family: Libre Caslon Text;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+      line-height: 48px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    p {
+      font-family: IBM Plex Sans;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    img {
+      width: 160px;
+      height: 15px;
+      align-self: center;
+    }
+    .food-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 0 70px;
+      .btn-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        button {
+          width: 130px;
+          height: 44px;
+          padding: 12px 8px 12px 8px;
+          background-color: #caab2a;
+          border: none;
+          outline: none;
+          text-align: center;
+        }
+      }
+      .card-pic {
+        width: 318px;
+        height: 192px;
+      }
+      .card-content {
+        align-items: center;
+        padding: 0 20px;
+        padding-bottom: 10px;
+        .card-title {
+          width: 278px;
+          height: 48px;
+          text-align: left;
+          h2 {
+            font-family: Libre Caslon Text;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #caab2a;
+          }
+        }
+        .card-time {
+          font-family: IBM Plex Sans;
+          font-weight: 700;
+          font-style: normal;
+          font-size: 16px;
+          line-height: 16px;
+        }
+        .card-text {
+          font-family: IBM Plex Sans;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 14px;
+          line-height: 20px;
+        }
+        .card-button {
+          width: 278px;
+          height: 44px;
+          padding: 12px 8px 12px 8px;
+          background-color: #caab2a;
+          border: none;
+          outline: none;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .our-location {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 70px;
+    .subtitle {
+      text-align: center;
+    }
+    h1 {
+      font-family: Libre Caslon Text;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+      line-height: 48px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    p {
+      font-family: IBM Plex Sans;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    img {
+      width: 160px;
+      height: 15px;
+      align-self: center;
+    }
+    .location-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 20px;
+      .card-pic {
+        width: 660px;
+        height: 280px;
+      }
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        h4 {
+          font-family: IBM Plex Sans;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 12px;
+          line-height: 15px;
+        }
+        .card-title {
+          color: #caab2a;
+          font-family: Libre Caslon Text;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 24px;
+          line-height: 30px;
+          h2 {
+            margin: 0;
+          }
+        }
+        .card-subtitle {
+          font-family: IBM Plex Sans;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 14px;
+          line-height: 24px;
+          width: 564px;
+        }
+        .location-row {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          .loc-elements {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            p {
+              font-size: 14px;
+            }
+            .loc-elem-pic {
+              width: 12px;
+              height: 14px;
+              margin-right: 5px;
+            }
+          }
+        }
+        .location-opening-hours {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .loc-elem-pic {
+            width: 12px;
+            height: 14px;
+            margin-right: 5px;
+          }
+          .divider {
+            width: 460px;
+            margin-left: 15px;
+          }
+        }
+        .hours {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .elements {
+            display: flex;
+            flex-direction: column;
+            width: 60px;
+            align-items: center;
+          }
+        }
+        .location-button {
+          width: 232px;
+          height: 56px;
+          padding: 16px;
+          background-color: #caab2a;
+          border: none;
+        }
+      }
+    }
+  }
+  .history-section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 70px;
+    .subtitle {
+      text-align: center;
+    }
+    h1 {
+      font-family: Libre Caslon Text;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+      line-height: 48px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    p {
+      font-family: IBM Plex Sans;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    img {
+      width: 160px;
+      height: 15px;
+      align-self: center;
+    }
+    .history-pic {
+      width: 1335px;
+      margin-top: 25px;
+    }
+    .history-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .history-card {
+        display: flex;
+        flex-direction: column;
+        width: 432px;
+        img {
+          width: 432px;
+          height: 360px;
+        }
+        .history-card-title {
+          font-family: IBM Plex Sans;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 14px;
+          line-height: 18px;
+        }
+        .history-card-time {
+          font-family: Libre Caslon Text;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 24px;
+          line-height: 30px;
+          color: #caab2a;
+        }
+        .history-card-subtitle {
+          font-family: IBM Plex Sans;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 14px;
+          line-height: 24px;
+          width: 432px;
+          height: 120px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:1230px) {
+  .homepage-wrapper {
+    .buttons-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .events-section {
+      .food-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .our-location {
+      .location-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .history-section {
+      .history-pic {
+        width: 650px;
+      }
+      .history-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .history-card {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:768px) {
+  .homepage-wrapper {
+    .header-wrapper {
+      .header-content {
+        .title {
+          width: 600px;
+          font-size: 60px;
+          line-height: 70px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:600px) {
+  .homepage-wrapper {
+    .header-wrapper {
+      .header-content {
+        .title {
+          width: 400px;
+          font-size: 60px;
+          line-height: 70px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:400px) {
+  .homepage-wrapper {
+    .header-wrapper {
+      .header-content {
+        .title {
+          width: 200px;
+          font-size: 60px;
+          line-height: 60px;
+        }
+      }
+    }
+    .buttons-row {
+      .right {
+        .cselect {
+          width: 100px;
+          flex-direction: column;
+          select {
+            width: 100px;
+            font-size: 10px;
+          }
+        }
+        h3 {
+          text-align: center;
+          line-height: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:320px) {
+  .homepage-wrapper {
+    .buttons-row {
+      .right {
+        .cselect {
+          width: 70px;
+          flex-direction: column;
+          select {
+            width: 70px;
+            font-size: 8px;
+          }
+        }
+        h3 {
+          text-align: center;
+          line-height: 12px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

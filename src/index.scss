@@ -1,1 +1,8 @@
-@import "./screens/homePage/index";
+@import "./components/index";
+@import "./screens/index";
+@import "./UI/index";
+
+body {
+    margin: 0;
+    padding: 0;
+}
