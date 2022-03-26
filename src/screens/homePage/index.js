@@ -18,6 +18,10 @@ import ThirdCardPicture from "../../assets/images/third-card.svg";
 import FirstLocation from "../../assets/images/location-first-card.svg";
 import SecondLocation from "../../assets/images/location-sec-card.svg";
 import Divider from "../../assets/images/divider.svg";
+import HistoryPic from "../../assets/images/history.svg";
+import History1 from "../../assets/images/history1.svg";
+import History2 from "../../assets/images/history2.svg";
+import History3 from "../../assets/images/history3.svg";
 
 const HomePage = () => {
   return (
@@ -282,6 +286,60 @@ const HomePage = () => {
               <button className="location-button">VISA MENY</button>
             </div>
           </FoodCard>
+        </div>
+      </div>
+      <div className="history-section">
+        <h1>History</h1>
+        <p className="subtitle">
+          Enim volutpat velit molestie morbi pharetra nam nisi et.{" "}
+        </p>
+        <img src={EventsVector} />
+        <img src={HistoryPic} className="history-pic" />
+        <div className="history-cards">
+          <div className="history-card">
+            <div className="history-card-text">
+              <h4 className="history-card-title">OPENING</h4>
+              <h3 className="history-card-time">2005</h3>
+              <p className="history-card-subtitle">
+                At eu eu suspendisse ornare vitae eu tempor pulvinar. In viverra
+                est tempor tortor vitae, elit duis. Dignissim aliquam morbi ut
+                scelerisque vel fermentum. Vel ut sollicitudin proin odio
+                blandit odio ante non tristique. Pellentesque cras massa
+                parturient vitae. Facilisis id tincidunt porttitor viverra nec
+                mattis.
+              </p>
+            </div>
+            <img src={History1} />
+          </div>
+          <div className="history-card">
+            <div className="history-card-text">
+              <h4 className="history-card-title">BEGINING YEARS</h4>
+              <h3 className="history-card-time">2005 - 2020</h3>
+              <p className="history-card-subtitle">
+                Ultrices diam enim et nec laoreet. Cras vulputate at vitae mi
+                enim proin. Sit aliquet id mi id cursus enim, sit ipsum augue.
+                Nullam sed morbi a elementum metus. Nisl gravida ultricies
+                aliquam risus sit. Nibh libero accumsan, a mauris morbi quis
+                proin arcu. A porttitor vitae in a gravida sed.
+              </p>
+            </div>
+            <img src={History2} />
+          </div>
+          <div className="history-card">
+            <div className="history-card-text">
+              <h4 className="history-card-title">PRESENT</h4>
+              <h3 className="history-card-time">2020 - Present</h3>
+              <p className="history-card-subtitle">
+                Velit tincidunt fermentum sit duis suspendisse. Consequat velit
+                vitae eget nunc et massa eu eget consequat. Ut tristique
+                pellentesque odio tincidunt amet. Pulvinar duis ipsum ultrices
+                nisl egestas laoreet risus volutpat. Vulputate mollis
+                pellentesque aliquet aenean porttitor gravida at. Lectus aliquam
+                egestas non.
+              </p>
+            </div>
+            <img src={History3} />
+          </div>
         </div>
       </div>
       <Footer />

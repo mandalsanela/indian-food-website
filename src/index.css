@@ -882,6 +882,112 @@
   border: none;
 }
 
+.homepage-wrapper .history-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 70px;
+}
+
+.homepage-wrapper .history-section .subtitle {
+  text-align: center;
+}
+
+.homepage-wrapper .history-section h1 {
+  font-family: Libre Caslon Text;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.homepage-wrapper .history-section p {
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.homepage-wrapper .history-section img {
+  width: 160px;
+  height: 15px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.homepage-wrapper .history-section .history-pic {
+  width: 1335px;
+  margin-top: 25px;
+}
+
+.homepage-wrapper .history-section .history-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homepage-wrapper .history-section .history-cards .history-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 432px;
+}
+
+.homepage-wrapper .history-section .history-cards .history-card img {
+  width: 432px;
+  height: 360px;
+}
+
+.homepage-wrapper .history-section .history-cards .history-card .history-card-title {
+  font-family: IBM Plex Sans;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.homepage-wrapper .history-section .history-cards .history-card .history-card-time {
+  font-family: Libre Caslon Text;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #caab2a;
+}
+
+.homepage-wrapper .history-section .history-cards .history-card .history-card-subtitle {
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  width: 432px;
+  height: 120px;
+}
+
 @media only screen and (max-width: 1230px) {
   .homepage-wrapper .buttons-row {
     display: -webkit-box;
@@ -918,6 +1024,24 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .homepage-wrapper .history-section .history-pic {
+    width: 650px;
+  }
+  .homepage-wrapper .history-section .history-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homepage-wrapper .history-section .history-cards .history-card {
+    margin-bottom: 15px;
   }
 }
 

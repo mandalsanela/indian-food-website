@@ -256,7 +256,7 @@
           line-height: 15px;
         }
         .card-title {
-          color:#caab2a;
+          color: #caab2a;
           font-family: Libre Caslon Text;
           font-weight: 400;
           font-style: normal;
@@ -328,6 +328,81 @@
       }
     }
   }
+  .history-section {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 70px;
+    .subtitle {
+      text-align: center;
+    }
+    h1 {
+      font-family: Libre Caslon Text;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+      line-height: 48px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    p {
+      font-family: IBM Plex Sans;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    img {
+      width: 160px;
+      height: 15px;
+      align-self: center;
+    }
+    .history-pic {
+      width: 1335px;
+      margin-top: 25px;
+    }
+    .history-cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .history-card {
+        display: flex;
+        flex-direction: column;
+        width: 432px;
+        img {
+          width: 432px;
+          height: 360px;
+        }
+        .history-card-title {
+          font-family: IBM Plex Sans;
+          font-weight: 500;
+          font-style: normal;
+          font-size: 14px;
+          line-height: 18px;
+        }
+        .history-card-time {
+          font-family: Libre Caslon Text;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 24px;
+          line-height: 30px;
+          color: #caab2a;
+        }
+        .history-card-subtitle {
+          font-family: IBM Plex Sans;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 14px;
+          line-height: 24px;
+          width: 432px;
+          height: 120px;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and(max-width:1230px) {
@@ -349,6 +424,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+      }
+    }
+    .history-section {
+      .history-pic {
+        width: 650px;
+      }
+      .history-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .history-card {
+          margin-bottom: 15px;
+        }
       }
     }
   }
