@@ -22,6 +22,9 @@ import HistoryPic from "../../assets/images/history.svg";
 import History1 from "../../assets/images/history1.svg";
 import History2 from "../../assets/images/history2.svg";
 import History3 from "../../assets/images/history3.svg";
+import AboutUs1 from "../../assets/images/aboutus1.svg";
+import AboutUs2 from "../../assets/images/aboutus2.svg";
+import Line from "../../assets/images/line.svg";
 
 const HomePage = () => {
   return (
@@ -339,6 +342,43 @@ const HomePage = () => {
               </p>
             </div>
             <img src={History3} />
+          </div>
+        </div>
+      </div>
+      <div className="about-us-section">
+        <h1>About us</h1>
+        <p className="subtitle">
+          Sit orci orci velit elementum et est. Non, cursus arcu.{" "}
+        </p>
+        <img src={EventsVector} />
+        <div className="about-us-content">
+          <div className="about-us-left">
+            <img src={AboutUs1} className="about-us-picture" />
+            <div className="left-text">
+              <h3 className="about-title">Always ready and prepared</h3>
+              <img src={Line} className="line"/>
+              <p className="about-text">
+                A tristique aenean vestibulum nisl, non proin. Aenean tempus,
+                eget libero tortor amet in pellentesque morbi. Viverra velit,
+                quis varius ac tempus. Arcu ac, vivamus varius fermentum fames
+                eu at sit. Netus in etiam mi porta in posuere. Aenean ut
+                lobortis eget venenatis eget eu et.
+              </p>
+            </div>
+          </div>
+          <div className="about-us-right">
+            <div className="right-text">
+              <h3 className="about-title">Always ready and prepared</h3>
+              <img src={Line} className="line"/>
+              <p className="about-text">
+                A tristique aenean vestibulum nisl, non proin. Aenean tempus,
+                eget libero tortor amet in pellentesque morbi. Viverra velit,
+                quis varius ac tempus. Arcu ac, vivamus varius fermentum fames
+                eu at sit. Netus in etiam mi porta in posuere. Aenean ut
+                lobortis eget venenatis eget eu et.
+              </p>
+            </div>
+            <img src={AboutUs2} className="about-us-picture" />
           </div>
         </div>
       </div>

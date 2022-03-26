@@ -988,6 +988,134 @@
   height: 120px;
 }
 
+.homepage-wrapper .about-us-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 70px;
+}
+
+.homepage-wrapper .about-us-section .subtitle {
+  text-align: center;
+}
+
+.homepage-wrapper .about-us-section h1 {
+  font-family: Libre Caslon Text;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.homepage-wrapper .about-us-section p {
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.homepage-wrapper .about-us-section img {
+  width: 160px;
+  height: 15px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.homepage-wrapper .about-us-section .line {
+  width: 60px;
+  height: 2px;
+}
+
+.homepage-wrapper .about-us-section .about-us-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homepage-wrapper .about-us-section .about-us-content h3,
+.homepage-wrapper .about-us-section .about-us-content p {
+  padding: 0;
+  margin: 0;
+}
+
+.homepage-wrapper .about-us-section .about-us-content .about-us-picture {
+  width: 680px;
+  height: 554px;
+}
+
+.homepage-wrapper .about-us-section .about-us-content .about-title {
+  font-family: Libre Caslon Text;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 40px;
+  color: #caab2a;
+  width: 207px;
+}
+
+.homepage-wrapper .about-us-section .about-us-content .about-text {
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+  width: 432px;
+}
+
+.homepage-wrapper .about-us-section .about-us-content .about-us-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homepage-wrapper .about-us-section .about-us-content .about-us-left .left-text {
+  width: 432px;
+  height: 315px;
+}
+
+.homepage-wrapper .about-us-section .about-us-content .about-us-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 @media only screen and (max-width: 1230px) {
   .homepage-wrapper .buttons-row {
     display: -webkit-box;
@@ -1042,6 +1170,15 @@
   }
   .homepage-wrapper .history-section .history-cards .history-card {
     margin-bottom: 15px;
+  }
+  .homepage-wrapper .about-us-section .about-us-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
