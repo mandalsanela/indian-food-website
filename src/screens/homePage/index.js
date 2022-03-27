@@ -25,6 +25,7 @@ import History3 from "../../assets/images/history3.svg";
 import AboutUs1 from "../../assets/images/aboutus1.svg";
 import AboutUs2 from "../../assets/images/aboutus2.svg";
 import Line from "../../assets/images/line.svg";
+import ContactForm from "../../components/contactForm";
 
 const HomePage = () => {
   return (
@@ -80,7 +81,7 @@ const HomePage = () => {
         </p>
         <img src={EventsVector} />
         <div className="food-cards">
-          <FoodCard width="318px" height="481px">
+          <FoodCard width="308px" height="481px">
             <img src={FirstCardPicture} className="card-pic" />
             <div className="card-content">
               <div className="card-title">
@@ -96,7 +97,7 @@ const HomePage = () => {
               <button className="card-button">Läs mer</button>
             </div>
           </FoodCard>
-          <FoodCard width="318px" height="481px">
+          <FoodCard width="308px" height="481px">
             <img src={SecondCardPicture} className="card-pic" />
             <div className="card-content">
               <div className="card-title">
@@ -117,7 +118,7 @@ const HomePage = () => {
               </div>
             </div>
           </FoodCard>
-          <FoodCard width="318px" height="481px">
+          <FoodCard width="308px" height="481px">
             <img src={ThirdCardPicture} className="card-pic" />
             <div className="card-content">
               <div className="card-title">
@@ -135,7 +136,7 @@ const HomePage = () => {
               <button className="card-button">Läs mer</button>
             </div>
           </FoodCard>
-          <FoodCard width="318px" height="289px">
+          <FoodCard width="308px" height="289px">
             <div className="card-content">
               <div className="card-title">
                 <h2>
@@ -161,7 +162,7 @@ const HomePage = () => {
         </p>
         <img src={EventsVector} />
         <div className="location-cards">
-          <FoodCard width="660px" height="762px">
+          <FoodCard width="620px" height="762px">
             <img src={FirstLocation} className="card-pic" />
             <div className="card-content">
               <h4>RESTAURANT</h4>
@@ -225,7 +226,7 @@ const HomePage = () => {
               <button className="location-button">VISA MENY</button>
             </div>
           </FoodCard>
-          <FoodCard width="660px" height="762px">
+          <FoodCard width="620px" height="762px">
             <img src={SecondLocation} className="card-pic" />
             <div className="card-content">
               <h4>KITCHEN</h4>
@@ -381,6 +382,7 @@ const HomePage = () => {
             <img src={AboutUs2} className="about-us-picture" />
           </div>
         </div>
+        <ContactForm />
       </div>
       <Footer />
     </div>

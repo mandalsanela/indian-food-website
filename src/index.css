@@ -378,6 +378,247 @@
   }
 }
 
+.contact-form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #000000;
+  background-color: #1d1d1f;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 50px;
+  width: 900px;
+  height: 450px;
+}
+
+.contact-form-wrapper .contact-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+}
+
+.contact-form-wrapper .contact-left h3,
+.contact-form-wrapper .contact-left h4,
+.contact-form-wrapper .contact-left p {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-form-wrapper .contact-left .contact-title {
+  font-family: IBM Plex Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  font-style: normal;
+  width: 98px;
+}
+
+.contact-form-wrapper .contact-left .contact-subtitle {
+  font-family: Libre Caslon Text;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+  font-style: normal;
+  color: #caab2a;
+  width: 255px;
+}
+
+.contact-form-wrapper .contact-left .contact-text {
+  width: 348px;
+  height: 56px;
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.contact-form-wrapper .contact-left .contact-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  width: 300px;
+  height: 80px;
+  padding: 16px 22px 16px 22px;
+  background-color: rgba(191, 191, 191, 0.3);
+  border: 1px solid white;
+  margin-top: 20px;
+  font-family: IBM Plex Sans;
+  font-weight: 400px;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.contact-form-wrapper .contact-left .contact-button .contact-icons {
+  width: 32px;
+  height: 32px;
+}
+
+.contact-form-wrapper .contact-left .contact-button .contact-data {
+  width: 187px;
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: start;
+  margin-left: 15px;
+}
+
+.contact-form-wrapper .contact-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form-wrapper .contact-right input {
+  width: 400px;
+  height: 40px;
+  margin: 15px 0;
+  padding: 16px 24px 16px 24px;
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.contact-form-wrapper .contact-right textarea {
+  margin: 15px 0;
+  padding: 16px 24px 16px 24px;
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.contact-form-wrapper .contact-right button {
+  width: 450px;
+  height: 50px;
+  margin-top: 15px;
+  padding: 16px 56px 16px 56px;
+  background-color: #caab2a;
+  border: none;
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1040px) {
+  .contact-form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 450px;
+    height: 1050px;
+  }
+  .contact-form-wrapper .contact-left .contact-left-text {
+    width: 300px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .contact-form-wrapper .contact-left .contact-left-text p {
+    width: 300px;
+  }
+  .contact-form-wrapper .contact-left .contact-button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .contact-form-wrapper .contact-right input,
+  .contact-form-wrapper .contact-right textarea {
+    width: 255px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .contact-form-wrapper .contact-right button {
+    width: 300px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .contact-form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 300px;
+    height: 1050px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .contact-form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 250px;
+    height: 1050px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .contact-form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 230px;
+    height: 1050px;
+  }
+}
+
 .homepage-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,7 +718,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -7%;
+  margin-top: -5%;
 }
 
 .homepage-wrapper .buttons-row img {
@@ -602,6 +843,9 @@
           justify-content: space-between;
   margin-top: 20px;
   padding: 0 70px;
+  width: 1280px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .homepage-wrapper .events-section .food-cards .btn-row {
@@ -628,7 +872,7 @@
 }
 
 .homepage-wrapper .events-section .food-cards .card-pic {
-  width: 318px;
+  width: 308px;
   height: 192px;
 }
 
@@ -738,11 +982,19 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 20px;
+  width: 1260px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.homepage-wrapper .our-location .location-cards .locations {
+  border-radius: 15px 15px 0 0;
 }
 
 .homepage-wrapper .our-location .location-cards .card-pic {
-  width: 660px;
+  width: 620px;
   height: 280px;
+  margin-top: -3%;
 }
 
 .homepage-wrapper .our-location .location-cards .card-content {
@@ -943,6 +1195,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 1250px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .homepage-wrapper .history-section .history-cards .history-card {
@@ -953,11 +1208,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 432px;
+  width: 410px;
 }
 
 .homepage-wrapper .history-section .history-cards .history-card img {
-  width: 432px;
+  width: 400px;
   height: 360px;
 }
 
@@ -984,7 +1239,7 @@
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
-  width: 432px;
+  width: 400px;
   height: 120px;
 }
 
@@ -1257,14 +1512,13 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #BFBFBF;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
   border: 1px solid white;
   color: white;
   width: 330px;
-  height: 135px;
+  height: 100px;
   margin: 0 20px;
   padding: 32px 33px 32px 33px;
+  opacity: 0.7;
 }
 
 @media only screen and (max-width: 1230px) {
