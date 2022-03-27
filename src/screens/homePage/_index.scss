@@ -142,6 +142,8 @@
       justify-content: space-between;
       margin-top: 20px;
       padding: 0 70px;
+      width: 1280px;
+      align-self: center;
       .btn-row {
         display: flex;
         flex-direction: row;
@@ -157,7 +159,7 @@
         }
       }
       .card-pic {
-        width: 318px;
+        width: 308px;
         height: 192px;
       }
       .card-content {
@@ -240,9 +242,15 @@
       flex-direction: row;
       justify-content: space-between;
       margin-top: 20px;
+      width: 1260px;
+      align-self: center;
+      .locations {
+        border-radius: 15px 15px 0 0;
+      }
       .card-pic {
-        width: 660px;
+        width: 620px;
         height: 280px;
+        margin-top: -3%;
       }
       .card-content {
         display: flex;
@@ -368,12 +376,14 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      width: 1250px;
+      align-self: center;
       .history-card {
         display: flex;
         flex-direction: column;
-        width: 432px;
+        width: 410px;
         img {
-          width: 432px;
+          width: 400px;
           height: 360px;
         }
         .history-card-title {
@@ -397,7 +407,7 @@
           font-style: normal;
           font-size: 14px;
           line-height: 24px;
-          width: 432px;
+          width: 400px;
           height: 120px;
         }
       }

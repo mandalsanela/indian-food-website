@@ -843,6 +843,9 @@
           justify-content: space-between;
   margin-top: 20px;
   padding: 0 70px;
+  width: 1280px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .homepage-wrapper .events-section .food-cards .btn-row {
@@ -869,7 +872,7 @@
 }
 
 .homepage-wrapper .events-section .food-cards .card-pic {
-  width: 318px;
+  width: 308px;
   height: 192px;
 }
 
@@ -979,11 +982,19 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 20px;
+  width: 1260px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.homepage-wrapper .our-location .location-cards .locations {
+  border-radius: 15px 15px 0 0;
 }
 
 .homepage-wrapper .our-location .location-cards .card-pic {
-  width: 660px;
+  width: 620px;
   height: 280px;
+  margin-top: -3%;
 }
 
 .homepage-wrapper .our-location .location-cards .card-content {
@@ -1184,6 +1195,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 1250px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .homepage-wrapper .history-section .history-cards .history-card {
@@ -1194,11 +1208,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 432px;
+  width: 410px;
 }
 
 .homepage-wrapper .history-section .history-cards .history-card img {
-  width: 432px;
+  width: 400px;
   height: 360px;
 }
 
@@ -1225,7 +1239,7 @@
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
-  width: 432px;
+  width: 400px;
   height: 120px;
 }
 
