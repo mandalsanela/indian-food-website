@@ -1,5 +1,7 @@
 import React from "react";
 import LocationIcon from "../../assets/images/icons/location-icon.svg";
+import PhoneIcon from "../../assets/images/icons/phone-vector.svg";
+
 const ContactForm = () => {
   return (
     <div className="contact-form-wrapper">
@@ -11,12 +13,12 @@ const ContactForm = () => {
           there for you! 👋
         </p>
         <button className="contact-button">
-          <img src={LocationIcon} />
-          <p>Drabantvägen 4, 194 33 Upplands Väsby, Sverige</p>
+          <img src={LocationIcon} className="contact-icons"/>
+          <p className="contact-data">Drabantvägen 4, 194 33 Upplands Väsby, Sverige</p>
         </button>
         <button className="contact-button">
-        <img src={LocationIcon} />
-          <p>076 027 41 51</p>
+        <img src={PhoneIcon} className="contact-icons"/>
+          <p className="contact-data">076 027 41 51</p>
         </button>
       </div>
       <div className="contact-right">
