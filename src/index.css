@@ -464,7 +464,7 @@
   width: 300px;
   height: 80px;
   padding: 16px 22px 16px 22px;
-  background-color: #BFBFBF;
+  background-color: rgba(191, 191, 191, 0.3);
   border: 1px solid white;
   margin-top: 20px;
   font-family: IBM Plex Sans;
@@ -534,6 +534,89 @@
   font-size: 16px;
   line-height: 15px;
   text-align: center;
+}
+
+@media only screen and (max-width: 1040px) {
+  .contact-form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 450px;
+    height: 1050px;
+  }
+  .contact-form-wrapper .contact-left .contact-left-text {
+    width: 300px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .contact-form-wrapper .contact-left .contact-left-text p {
+    width: 300px;
+  }
+  .contact-form-wrapper .contact-left .contact-button {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .contact-form-wrapper .contact-right input,
+  .contact-form-wrapper .contact-right textarea {
+    width: 255px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .contact-form-wrapper .contact-right button {
+    width: 300px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .contact-form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 300px;
+    height: 1050px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .contact-form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 250px;
+    height: 1050px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .contact-form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 230px;
+    height: 1050px;
+  }
 }
 
 .homepage-wrapper {

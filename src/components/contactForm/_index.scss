@@ -54,7 +54,7 @@
       width: 300px;
       height: 80px;
       padding: 16px 22px 16px 22px;
-      background-color: #BFBFBF;
+      background-color: rgba(191, 191, 191, 0.3);
       border: 1px solid white;
       margin-top: 20px;
       font-family: IBM Plex Sans;
@@ -114,5 +114,64 @@
       line-height: 15px;
       text-align: center;
     }
+  }
+}
+
+@media only screen and(max-width:1040px) {
+  .contact-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 1050px;
+    .contact-left {
+      .contact-left-text {
+        width: 300px;
+        align-self: center;
+        p {
+          width: 300px;
+        }
+      }
+      .contact-button {
+        align-self: center;
+      }
+    }
+    .contact-right {
+      input,
+      textarea {
+        width: 255px;
+        align-self: center;
+      }
+      button {
+        width: 300px;
+        align-self: center;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:580px) {
+  .contact-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 1050px;
+  }
+}
+
+@media only screen and(max-width:430px) {
+  .contact-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 1050px;
+  }
+}
+
+@media only screen and(max-width:380px) {
+  .contact-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 1050px;
   }
 }
