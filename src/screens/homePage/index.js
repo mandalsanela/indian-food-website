@@ -29,6 +29,7 @@ import ContactForm from "../../components/contactForm";
 import Escajg from "../../assets/images/icons/escajg.svg";
 import ClockIcon from "../../assets/images/icons/clock.svg";
 import ShoppingBasket from "../../assets/images/icons/shopping-basket.svg";
+import Carousel from "../../components/carousel";
 
 const HomePage = () => {
   return (
@@ -105,6 +106,7 @@ const HomePage = () => {
           })}
         </div>
       </div>
+      <Carousel />
       <div className="our-location">
         <h1>Our locations</h1>
         <p className="subtitle">
