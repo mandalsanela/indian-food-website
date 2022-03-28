@@ -76,6 +76,17 @@
         font-family: Libre Caslon Text;
         font-style: normal;
       }
+      .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .shopping-basket {
+          width: 22px;
+          height: 19px;
+          margin-right: 10px;
+        }
+      }
       .cselect {
         display: flex;
         flex-direction: row;
@@ -327,11 +338,24 @@
           }
         }
         .location-button {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
           width: 232px;
           height: 56px;
           padding: 16px;
           background-color: #caab2a;
+          justify-content: center;
           border: none;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+          p {
+            width: 100px;
+            text-align: start;
+            margin-left: 10px;
+          }
         }
       }
     }

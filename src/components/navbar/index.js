@@ -4,7 +4,9 @@ import { useLocation } from "react-router";
 
 function NavBar() {
   const [open, setOpen] = useState(false);
+  
   const location = useLocation();
+
   useEffect(() => {
     window.scroll(0, 0);
   }, [location, location.pathname]);
