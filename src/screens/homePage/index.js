@@ -73,8 +73,8 @@ const HomePage = () => {
             <h1>TAKEAWAY?</h1>
             <ButtonYellow>
               <div className="row">
-              <img src={ShoppingBasket} className="shopping-basket" />
-              <h3>BESTÄLL TAKEAWAY</h3>
+                <img src={ShoppingBasket} className="shopping-basket" />
+                <h3>BESTÄLL TAKEAWAY</h3>
               </div>
             </ButtonYellow>
           </div>
@@ -152,8 +152,8 @@ const HomePage = () => {
                     })}
                   </div>
                   <button className="location-button">
-                   <img src={Escajg} />
-                   <p>VISA MENY</p>
+                    <img src={Escajg} />
+                    <p>VISA MENY</p>
                   </button>
                 </div>
               </FoodCard>
@@ -171,17 +171,15 @@ const HomePage = () => {
         <div className="history-cards">
           {historyData?.map((item) => {
             return (
-             <div className="history-card">
-             <div className="history-card-text">
-               <h4 className="history-card-title"> {item?.title} </h4>
-               <h3 className="history-card-time"> {item?.time} </h3>
-               <p className="history-card-subtitle">
-                 {item?.subtitle}
-               </p>
-             </div>
-             <img src={item?.image} />
-           </div>
-            )
+              <div className="history-card">
+                <div className="history-card-text">
+                  <h4 className="history-card-title"> {item?.title} </h4>
+                  <h3 className="history-card-time"> {item?.time} </h3>
+                  <p className="history-card-subtitle">{item?.subtitle}</p>
+                </div>
+                <img src={item?.image} />
+              </div>
+            );
           })}
         </div>
       </div>
