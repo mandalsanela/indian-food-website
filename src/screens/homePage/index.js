@@ -6,7 +6,7 @@ import Ellipse1 from "../../assets/images/ellipse1.svg";
 import Ellipse2 from "../../assets/images/ellipse2.svg";
 import Footer from "../../components/footer";
 import ButtonGrey from "../../UI/buttonGrey";
-import LocationIcon from "../../assets/images/icons/location-icon.svg";
+import LocationIcon from "../../assets/images/icons/location.svg";
 import FoodIcon from "../../assets/images/icons/food-icon.svg";
 import ArrowDown from "../../assets/images/icons/icon-arrow-down.svg";
 import ButtonYellow from "../../UI/buttonYellow";
@@ -30,6 +30,14 @@ import Escajg from "../../assets/images/icons/escajg.svg";
 import ClockIcon from "../../assets/images/icons/clock.svg";
 import ShoppingBasket from "../../assets/images/icons/shopping-basket.svg";
 import Carousel from "../../components/carousel";
+import PhoneIcon from "../../assets/images/icons/phone.svg";
+import MailIcon from "../../assets/images/icons/mail.svg";
+import Vector1 from "../../assets/images/vector1.svg";
+import Vector2 from "../../assets/images/vector2.svg";
+import Vector3 from "../../assets/images/vector3.svg";
+import Vector4 from "../../assets/images/vector4.svg";
+import Vector5 from "../../assets/images/vector5.svg";
+import Vector6 from "../../assets/images/vector6.svg";
 
 const HomePage = () => {
   return (
@@ -81,30 +89,37 @@ const HomePage = () => {
           </div>
         </ButtonGrey>
       </div>
-      <div className="events-section">
-        <h1>Events</h1>
-        <p className="subtitle">
-          Enim volutpat velit molestie morbi pharetra nam nisi et.
-        </p>
-        <img src={EventsVector} />
-        <div className="food-cards">
-          {foodData?.map((item, index) => {
-            return (
-              <FoodCard width="308px" height={index !== 3 ? "481px" : "289px"}>
-                {item.image && <img src={item.image} className="card-pic" />}
-                <div className="card-content">
-                  <div className="card-title">
-                    <h2> {item?.title} </h2>
+      <div className="events-vector">
+        <img src={Vector1} />
+        <div className="events-section">
+          <h1>Events</h1>
+          <p className="subtitle">
+            Enim volutpat velit molestie morbi pharetra nam nisi et.
+          </p>
+          <img src={EventsVector} />
+          <div className="food-cards">
+            {foodData?.map((item, index) => {
+              return (
+                <FoodCard
+                  width="300px"
+                  height={index !== 3 ? "481px" : "289px"}
+                >
+                  {item.image && <img src={item.image} className="card-pic" />}
+                  <div className="card-content">
+                    <div className="card-title">
+                      <h2> {item?.title} </h2>
+                    </div>
+                    <p className="card-time"> {item?.time} </p>
+                    <hr size="1" />
+                    <p className="card-text">{item?.text}</p>
+                    <button className="card-button">LÄS MER</button>
                   </div>
-                  <p className="card-time"> {item?.time} </p>
-                  <hr size="1" />
-                  <p className="card-text">{item?.text}</p>
-                  <button className="card-button">Läs mer</button>
-                </div>
-              </FoodCard>
-            );
-          })}
+                </FoodCard>
+              );
+            })}
+          </div>
         </div>
+        <img src={Vector2} />
       </div>
       <Carousel />
       <div className="our-location">
@@ -130,16 +145,16 @@ const HomePage = () => {
                       <p> {item?.address} </p>
                     </div>
                     <div className="loc-elements">
-                      <img src={LocationIcon} className="loc-elem-pic" />
+                      <img src={MailIcon} className="loc-elem-pic" />
                       <p> {item?.mail} </p>
                     </div>
                     <div className="loc-elements">
-                      <img src={LocationIcon} className="loc-elem-pic" />
+                      <img src={PhoneIcon} className="loc-elem-pic" />
                       <p> {item?.phone} </p>
                     </div>
                   </div>
                   <div className="location-opening-hours">
-                    <img src={LocationIcon} className="loc-elem-pic" />
+                    <img src={ClockIcon} className="loc-elem-pic" />
                     <p>Opening Hours </p>
                     <img src={Divider} className="divider" />
                   </div>
@@ -208,20 +223,30 @@ const HomePage = () => {
           </div>
           <div className="about-us-right">
             <div className="right-text">
-              <h3 className="about-title">Always ready and prepared</h3>
+              <h3 className="about-title">Making food for the soul</h3>
               <img src={Line} className="line" />
               <p className="about-text">
-                A tristique aenean vestibulum nisl, non proin. Aenean tempus,
-                eget libero tortor amet in pellentesque morbi. Viverra velit,
-                quis varius ac tempus. Arcu ac, vivamus varius fermentum fames
-                eu at sit. Netus in etiam mi porta in posuere. Aenean ut
-                lobortis eget venenatis eget eu et.
+                Leo vitae augue lectus dignissim magna non id augue vel. Sit
+                nulla sit vitae odio quisque nulla platea. Sem mauris et
+                imperdiet quis dignissim. A diam nibh magna viverra adipiscing
+                etiam id. Phasellus malesuada lorem sed in nisl id massa. Id eu
+                id et cursus risus id sit mus neque ultrices a.
               </p>
             </div>
             <img src={AboutUs2} className="about-us-picture" />
           </div>
         </div>
-        <ContactForm />
+        <div className="contact">
+          <div className="v3v4">
+            <img src={Vector3} />
+            <img src={Vector4} />
+          </div>
+          <ContactForm />
+          <div className="v5v6">
+            <img src={Vector5} />
+            <img src={Vector6} />
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
