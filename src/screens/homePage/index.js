@@ -26,6 +26,9 @@ import AboutUs1 from "../../assets/images/aboutus1.svg";
 import AboutUs2 from "../../assets/images/aboutus2.svg";
 import Line from "../../assets/images/line.svg";
 import ContactForm from "../../components/contactForm";
+import Escajg from "../../assets/images/icons/escajg.svg";
+import ClockIcon from "../../assets/images/icons/clock.svg";
+import ShoppingBasket from "../../assets/images/icons/shopping-basket.svg";
 
 const HomePage = () => {
   return (
@@ -45,7 +48,7 @@ const HomePage = () => {
       </div>
       <div className="buttons-row">
         <ButtonGrey>
-          <img src={LocationIcon} />
+          <img src={ClockIcon} />
           <div className="right">
             <h1>ÖPPETTIDER</h1>
             <div className="cselect">
@@ -69,7 +72,10 @@ const HomePage = () => {
           <div className="right">
             <h1>TAKEAWAY?</h1>
             <ButtonYellow>
-              <h3>BESTÄLL TAKEAWAY</h3>
+              <div className="row">
+                <img src={ShoppingBasket} className="shopping-basket" />
+                <h3>BESTÄLL TAKEAWAY</h3>
+              </div>
             </ButtonYellow>
           </div>
         </ButtonGrey>
@@ -81,78 +87,22 @@ const HomePage = () => {
         </p>
         <img src={EventsVector} />
         <div className="food-cards">
-          <FoodCard width="308px" height="481px">
-            <img src={FirstCardPicture} className="card-pic" />
-            <div className="card-content">
-              <div className="card-title">
-                <h2>Libero commodo arcu elementum eget pharetra.</h2>
-              </div>
-              <p className="card-time">Varje tisdag | 15:00 - 20:00</p>
-              <hr size="1" />
-              <p className="card-text">
-                Sit pellentesque a at eros, nisl etiam. Nec, porttitor turpis
-                vel penatibus dignissim non a mauris. Sed eget ipsum eu ipsum
-                convallis vivamus sed ornare mi urna ne.
-              </p>
-              <button className="card-button">Läs mer</button>
-            </div>
-          </FoodCard>
-          <FoodCard width="308px" height="481px">
-            <img src={SecondCardPicture} className="card-pic" />
-            <div className="card-content">
-              <div className="card-title">
-                <h2>
-                  Ligula molestie pharetra auctor tincidunt id turpis et.{" "}
-                </h2>
-              </div>
-              <p className="card-time">Varje tisdag | 15:00 - 20:00</p>
-              <hr size="1" />
-              <p className="card-text">
-                Sit pellentesque a at eros, nisl etiam. Nec, porttitor turpis
-                vel penatibus dignissim non a mauris. Sed eget ipsum eu ipsum
-                convallis vivamus sed ornare mi urna ne.
-              </p>
-              <div className="btn-row">
-                <button>Läs mer</button>
-                <button>Läs mer</button>
-              </div>
-            </div>
-          </FoodCard>
-          <FoodCard width="308px" height="481px">
-            <img src={ThirdCardPicture} className="card-pic" />
-            <div className="card-content">
-              <div className="card-title">
-                <h2>
-                  Pellentesque libero tempor vel nec nulla odio vulputate ut.
-                </h2>
-              </div>
-              <p className="card-time">Varje tisdag | 15:00 - 20:00</p>
-              <hr size="1" />
-              <p className="card-text">
-                Sit pellentesque a at eros, nisl etiam. Nec, porttitor turpis
-                vel penatibus dignissim non a mauris. Sed eget ipsum eu ipsum
-                convallis vivamus sed ornare mi urna ne.
-              </p>
-              <button className="card-button">Läs mer</button>
-            </div>
-          </FoodCard>
-          <FoodCard width="308px" height="289px">
-            <div className="card-content">
-              <div className="card-title">
-                <h2>
-                  Sed risus at consectetur vitae ut mauris scelerisque nullam.
-                </h2>
-              </div>
-              <p className="card-time">Varje tisdag | 15:00 - 20:00</p>
-              <hr size="1" />
-              <p className="card-text">
-                Sit pellentesque a at eros, nisl etiam. Nec, porttitor turpis
-                vel penatibus dignissim non a mauris. Sed eget ipsum eu ipsum
-                convallis vivamus sed ornare mi urna ne.
-              </p>
-              <button className="card-button">Läs mer</button>
-            </div>
-          </FoodCard>
+          {foodData?.map((item, index) => {
+            return (
+              <FoodCard width="308px" height={index !== 3 ? "481px" : "289px"}>
+                {item.image && <img src={item.image} className="card-pic" />}
+                <div className="card-content">
+                  <div className="card-title">
+                    <h2> {item?.title} </h2>
+                  </div>
+                  <p className="card-time"> {item?.time} </p>
+                  <hr size="1" />
+                  <p className="card-text">{item?.text}</p>
+                  <button className="card-button">Läs mer</button>
+                </div>
+              </FoodCard>
+            );
+          })}
         </div>
       </div>
       <div className="our-location">
@@ -162,134 +112,53 @@ const HomePage = () => {
         </p>
         <img src={EventsVector} />
         <div className="location-cards">
-          <FoodCard width="620px" height="762px">
-            <img src={FirstLocation} className="card-pic" />
-            <div className="card-content">
-              <h4>RESTAURANT</h4>
-              <div className="card-title">
-                <h2>Restaurant Food</h2>
-              </div>
-              <p className="card-subtitle">
-                Cum pellentesque nisi sit facilisi suspendisse. Aliquet egestas
-                at morbi ultricies euismod scelerisque. Malesuada rhoncus
-                feugiat gravida adipiscing.
-              </p>
-              <div className="location-row">
-                <div className="loc-elements">
-                  <img src={LocationIcon} className="loc-elem-pic" />
-                  <p>Jean Street 21105</p>
+          {locationData?.map((item) => {
+            return (
+              <FoodCard width="620px" height="762px">
+                <img src={item?.image} className="card-pic" />
+                <div className="card-content">
+                  <h4> {item?.header} </h4>
+                  <div className="card-title">
+                    <h2> {item?.title} </h2>
+                  </div>
+                  <p className="card-subtitle">{item?.subtitle}</p>
+                  <div className="location-row">
+                    <div className="loc-elements">
+                      <img src={LocationIcon} className="loc-elem-pic" />
+                      <p> {item?.address} </p>
+                    </div>
+                    <div className="loc-elements">
+                      <img src={LocationIcon} className="loc-elem-pic" />
+                      <p> {item?.mail} </p>
+                    </div>
+                    <div className="loc-elements">
+                      <img src={LocationIcon} className="loc-elem-pic" />
+                      <p> {item?.phone} </p>
+                    </div>
+                  </div>
+                  <div className="location-opening-hours">
+                    <img src={LocationIcon} className="loc-elem-pic" />
+                    <p>Opening Hours </p>
+                    <img src={Divider} className="divider" />
+                  </div>
+                  <div className="hours">
+                    {daysInWeek?.map((item) => {
+                      return (
+                        <div className="element">
+                          <p> {item?.name} </p>
+                          <p> {item?.time} </p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <button className="location-button">
+                    <img src={Escajg} />
+                    <p>VISA MENY</p>
+                  </button>
                 </div>
-                <div className="loc-elements">
-                  <img src={LocationIcon} className="loc-elem-pic" />
-                  <p>email.address@gmail.com</p>
-                </div>
-                <div className="loc-elements">
-                  <img src={LocationIcon} className="loc-elem-pic" />
-                  <p>076 027 41 51</p>
-                </div>
-              </div>
-              <div className="location-opening-hours">
-                <img src={LocationIcon} className="loc-elem-pic" />
-                <p>Opening Hours </p>
-                <img src={Divider} className="divider" />
-              </div>
-              <div className="hours">
-                <div className="element">
-                  <p>MANDAG</p>
-                  <p>09:00 - 17:00</p>
-                </div>
-                <div className="element">
-                  <p>TISDAG</p>
-                  <p>09:00 - 17:00</p>
-                </div>
-                <div className="element">
-                  <p>ONSDAG</p>
-                  <p>09:00 - 17:00</p>
-                </div>
-                <div className="element">
-                  <p>TORSDAG</p>
-                  <p>09:00 - 17:00</p>
-                </div>
-                <div className="element">
-                  <p>FREDAG</p>
-                  <p>09:00 - 17:00</p>
-                </div>
-                <div className="element">
-                  <p>LORDAG</p>
-                  <p>09:00 - 17:00</p>
-                </div>
-                <div className="element">
-                  <p>SONDAG</p>
-                  <p>09:00 - 17:00</p>
-                </div>
-              </div>
-              <button className="location-button">VISA MENY</button>
-            </div>
-          </FoodCard>
-          <FoodCard width="620px" height="762px">
-            <img src={SecondLocation} className="card-pic" />
-            <div className="card-content">
-              <h4>KITCHEN</h4>
-              <div className="card-title">
-                <h2>Kitchen Food</h2>
-              </div>
-              <p className="card-subtitle">
-                Ante a lacus, amet proin. Auctor turpis fermentum posuere
-                tortor, diam sit cursus sit. Porttitor felis facilisis est amet,
-                adipiscing vitae. Ac justo, convallis sed.
-              </p>
-              <div className="location-row">
-                <div className="loc-elements">
-                  <img src={LocationIcon} className="loc-elem-pic" />
-                  <p>Downstreet 20152</p>
-                </div>
-                <div className="loc-elements">
-                  <img src={LocationIcon} className="loc-elem-pic" />
-                  <p>email.address@gmail.com</p>
-                </div>
-                <div className="loc-elements">
-                  <img src={LocationIcon} className="loc-elem-pic" />
-                  <p>076 512 51 12</p>
-                </div>
-              </div>
-              <div className="location-opening-hours">
-                <img src={LocationIcon} className="loc-elem-pic" />
-                <p>Opening Hours </p>
-                <img src={Divider} className="divider" />
-              </div>
-              <div className="hours">
-                <div className="element">
-                  <p>MANDAG</p>
-                  <p>09:00 - 17:00</p>
-                </div>
-                <div className="element">
-                  <p>TISDAG</p>
-                  <p>09:00 - 17:00</p>
-                </div>
-                <div className="element">
-                  <p>ONSDAG</p>
-                  <p>09:00 - 17:00</p>
-                </div>
-                <div className="element">
-                  <p>TORSDAG</p>
-                  <p>09:00 - 17:00</p>
-                </div>
-                <div className="element">
-                  <p>FREDAG</p>
-                  <p>09:00 - 17:00</p>
-                </div>
-                <div className="element">
-                  <p>LORDAG</p>
-                  <p>09:00 - 17:00</p>
-                </div>
-                <div className="element">
-                  <p>SONDAG</p>
-                  <p>09:00 - 17:00</p>
-                </div>
-              </div>
-              <button className="location-button">VISA MENY</button>
-            </div>
-          </FoodCard>
+              </FoodCard>
+            );
+          })}
         </div>
       </div>
       <div className="history-section">
@@ -300,50 +169,18 @@ const HomePage = () => {
         <img src={EventsVector} />
         <img src={HistoryPic} className="history-pic" />
         <div className="history-cards">
-          <div className="history-card">
-            <div className="history-card-text">
-              <h4 className="history-card-title">OPENING</h4>
-              <h3 className="history-card-time">2005</h3>
-              <p className="history-card-subtitle">
-                At eu eu suspendisse ornare vitae eu tempor pulvinar. In viverra
-                est tempor tortor vitae, elit duis. Dignissim aliquam morbi ut
-                scelerisque vel fermentum. Vel ut sollicitudin proin odio
-                blandit odio ante non tristique. Pellentesque cras massa
-                parturient vitae. Facilisis id tincidunt porttitor viverra nec
-                mattis.
-              </p>
-            </div>
-            <img src={History1} />
-          </div>
-          <div className="history-card">
-            <div className="history-card-text">
-              <h4 className="history-card-title">BEGINING YEARS</h4>
-              <h3 className="history-card-time">2005 - 2020</h3>
-              <p className="history-card-subtitle">
-                Ultrices diam enim et nec laoreet. Cras vulputate at vitae mi
-                enim proin. Sit aliquet id mi id cursus enim, sit ipsum augue.
-                Nullam sed morbi a elementum metus. Nisl gravida ultricies
-                aliquam risus sit. Nibh libero accumsan, a mauris morbi quis
-                proin arcu. A porttitor vitae in a gravida sed.
-              </p>
-            </div>
-            <img src={History2} />
-          </div>
-          <div className="history-card">
-            <div className="history-card-text">
-              <h4 className="history-card-title">PRESENT</h4>
-              <h3 className="history-card-time">2020 - Present</h3>
-              <p className="history-card-subtitle">
-                Velit tincidunt fermentum sit duis suspendisse. Consequat velit
-                vitae eget nunc et massa eu eget consequat. Ut tristique
-                pellentesque odio tincidunt amet. Pulvinar duis ipsum ultrices
-                nisl egestas laoreet risus volutpat. Vulputate mollis
-                pellentesque aliquet aenean porttitor gravida at. Lectus aliquam
-                egestas non.
-              </p>
-            </div>
-            <img src={History3} />
-          </div>
+          {historyData?.map((item) => {
+            return (
+              <div className="history-card">
+                <div className="history-card-text">
+                  <h4 className="history-card-title"> {item?.title} </h4>
+                  <h3 className="history-card-time"> {item?.time} </h3>
+                  <p className="history-card-subtitle">{item?.subtitle}</p>
+                </div>
+                <img src={item?.image} />
+              </div>
+            );
+          })}
         </div>
       </div>
       <div className="about-us-section">
@@ -357,7 +194,7 @@ const HomePage = () => {
             <img src={AboutUs1} className="about-us-picture" />
             <div className="left-text">
               <h3 className="about-title">Always ready and prepared</h3>
-              <img src={Line} className="line"/>
+              <img src={Line} className="line" />
               <p className="about-text">
                 A tristique aenean vestibulum nisl, non proin. Aenean tempus,
                 eget libero tortor amet in pellentesque morbi. Viverra velit,
@@ -370,7 +207,7 @@ const HomePage = () => {
           <div className="about-us-right">
             <div className="right-text">
               <h3 className="about-title">Always ready and prepared</h3>
-              <img src={Line} className="line"/>
+              <img src={Line} className="line" />
               <p className="about-text">
                 A tristique aenean vestibulum nisl, non proin. Aenean tempus,
                 eget libero tortor amet in pellentesque morbi. Viverra velit,
@@ -389,4 +226,120 @@ const HomePage = () => {
   );
 };
 
+const foodData = [
+  {
+    image: FirstCardPicture,
+    title: "Libero commodo arcu elementum eget pharetra.",
+    time: "Varje tisdag | 15:00 - 20:00",
+    text: "Sit pellentesque a at eros, nisl etiam. Nec, porttitor turpis vel penatibus dignissim non a mauris. Sed eget ipsum eu ipsum convallis vivamus sed ornare mi urna ne.",
+  },
+
+  {
+    image: SecondCardPicture,
+    title: "Ligula molestie pharetra auctor tincidunt id turpis et.",
+    time: "Varje tisdag | 15:00 - 20:00",
+    text: "Sit pellentesque a at eros, nisl etiam. Nec, porttitor turpis vel penatibus dignissim non a mauris. Sed eget ipsum eu ipsum convallis vivamus sed ornare mi urna ne.",
+  },
+
+  {
+    image: ThirdCardPicture,
+    title: "Pellentesque libero tempor vel nec nulla odio vulputate ut.",
+    time: "Varje tisdag | 15:00 - 20:00",
+    text: "Sit pellentesque a at eros, nisl etiam. Nec, porttitor turpis vel penatibus dignissim non a mauris. Sed eget ipsum eu ipsum convallis vivamus sed ornare mi urna ne.",
+  },
+
+  {
+    image: null,
+    title: "Sed risus at consectetur vitae ut mauris scelerisque nullam.",
+    time: "Varje tisdag | 15:00 - 20:00",
+    text: "Sit pellentesque a at eros, nisl etiam. Nec, porttitor turpis vel penatibus dignissim non a mauris. Sed eget ipsum eu ipsum convallis vivamus sed ornare mi urna ne.",
+  },
+];
+
+const locationData = [
+  {
+    image: FirstLocation,
+    header: "RESTAURANT",
+    title: "Restaurant Food",
+    subtitle:
+      "Cum pellentesque nisi sit facilisi suspendisse. Aliquet egestas at morbi ultricies euismod scelerisque. Malesuada rhoncus feugiat gravida adipiscing.",
+    address: "Jean Street 21105",
+    mail: "email.address@gmail.com",
+    phone: "076 027 41 51",
+  },
+
+  {
+    image: SecondLocation,
+    header: "KITCHEN",
+    title: "Kitchen Food",
+    subtitle:
+      "Ante a lacus, amet proin. Auctor turpis fermentum posuere tortor, diam sit cursus sit. Porttitor felis facilisis est amet, adipiscing vitae. Ac justo, convallis sed.",
+    address: "Downstreet 20152",
+    mail: "email.address@gmail.com",
+    phone: "076 512 51 12",
+  },
+];
+
+const daysInWeek = [
+  {
+    name: "MANDAG",
+    time: "09:00 - 17:00",
+  },
+
+  {
+    name: "TISDAG",
+    time: "09:00 - 17:00",
+  },
+
+  {
+    name: "ONSDAG",
+    time: "09:00 - 17:00",
+  },
+
+  {
+    name: "TORSDAG",
+    time: "09:00 - 17:00",
+  },
+
+  {
+    name: "FREDAG",
+    time: "09:00 - 17:00",
+  },
+
+  {
+    name: "LORDAG",
+    time: "09:00 - 17:00",
+  },
+
+  {
+    name: "SONDAG",
+    time: "09:00 - 17:00",
+  },
+];
+
+const historyData = [
+  {
+    title: "OPENING",
+    time: "2005",
+    subtitle:
+      "At eu eu suspendisse ornare vitae eu tempor pulvinar. In viverra est tempor tortor vitae, elit duis. Dignissim aliquam morbi ut scelerisque vel fermentum. Vel ut sollicitudin proin odio blandit odio ante non tristique. Pellentesque cras massa parturient vitae. Facilisis id tincidunt porttitor viverra nec mattis.",
+    image: History1,
+  },
+
+  {
+    title: "BEGINING YEARS",
+    time: "2005 - 2020",
+    subtitle:
+      "Ultrices diam enim et nec laoreet. Cras vulputate at vitae mi enim proin. Sit aliquet id mi id cursus enim, sit ipsum augue. Nullam sed morbi a elementum metus. Nisl gravida ultricies aliquam risus sit. Nibh libero accumsan, a mauris morbi quis proin arcu. A porttitor vitae in a gravida sed.",
+    image: History2,
+  },
+
+  {
+    title: "PRESENT",
+    time: "2020 - Present",
+    subtitle:
+      " Velit tincidunt fermentum sit duis suspendisse. Consequat velit vitae eget nunc et massa eu eget consequat. Ut tristique pellentesque odio tincidunt amet. Pulvinar duis ipsum ultrices nisl egestas laoreet risus volutpat. Vulputate mollis pellentesque aliquet aenean porttitor gravida at. Lectus aliquam egestas non.",
+    image: History3,
+  },
+];
 export default HomePage;
