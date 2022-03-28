@@ -68,41 +68,41 @@
     }
   }
 }
-@media only screen and(max-width:768px) {
-  .footer-wrapper {
-    height: 400px;
-    .footer-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0;
-      padding-top: 10px;
-      .logo-div {
-        text-align: center;
-        padding: 15px 0;
-      }
-      .social-media-box {
-        padding: 15px 0;
-        .social-media-icons {
-          justify-content: center;
-        }
-      }
-    }
-  }
-}
+// @media only screen and(max-width:768px) {
+//   .footer-wrapper {
+//     height: 400px;
+//     .footer-content {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       padding: 0;
+//       padding-top: 10px;
+//       .logo-div {
+//         text-align: center;
+//         padding: 15px 0;
+//       }
+//       .social-media-box {
+//         padding: 15px 0;
+//         .social-media-icons {
+//           justify-content: center;
+//         }
+//       }
+//     }
+//   }
+// }
 
-@media only screen and(max-width:600px) {
-  .footer-wrapper {
-    align-items: center;
-    .footer-content {
-      .logo-div {
-        text-align: center;
-        margin: 0;
-        margin-left: -6%;
-        .logo {
-          text-align: center;
-        }
-      }
-    }
-  }
-}
+// @media only screen and(max-width:600px) {
+//   .footer-wrapper {
+//     align-items: center;
+//     .footer-content {
+//       .logo-div {
+//         text-align: center;
+//         margin: 0;
+//         margin-left: -6%;
+//         .logo {
+//           text-align: center;
+//         }
+//       }
+//     }
+//   }
+// }
