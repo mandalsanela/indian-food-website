@@ -5,7 +5,7 @@ import HeaderPic2 from "../../assets/images/header-v2.svg";
 import Ellipse1 from "../../assets/images/ellipse1.svg";
 import Ellipse2 from "../../assets/images/ellipse2.svg";
 import Footer from "../../components/footer";
-import ButtonGrey from "../../UI/buttonGrey";
+import GreyCard from "../../components/greyCard";
 import LocationIcon from "../../assets/images/icons/location.svg";
 import FoodIcon from "../../assets/images/icons/food-icon.svg";
 import ArrowDown from "../../assets/images/icons/icon-arrow-down.svg";
@@ -56,7 +56,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="buttons-row">
-        <ButtonGrey>
+        <GreyCard>
           <img src={ClockIcon} />
           <div className="right">
             <h1>ÖPPETTIDER</h1>
@@ -68,15 +68,15 @@ const HomePage = () => {
               <img src={ArrowDown} />
             </div>
           </div>
-        </ButtonGrey>
-        <ButtonGrey>
+        </GreyCard>
+        <GreyCard>
           <img src={LocationIcon} />
           <div className="right">
             <h1>ADRESS</h1>
             <p>Drabantvägen 4, 194 33 Upplands Väsby, Sverige</p>
           </div>
-        </ButtonGrey>
-        <ButtonGrey>
+        </GreyCard>
+        <GreyCard>
           <img src={FoodIcon} />
           <div className="right">
             <h1>TAKEAWAY?</h1>
@@ -87,7 +87,7 @@ const HomePage = () => {
               </div>
             </ButtonYellow>
           </div>
-        </ButtonGrey>
+        </GreyCard>
       </div>
       <div className="events-vector">
         <img src={Vector1} />
@@ -131,7 +131,7 @@ const HomePage = () => {
         <div className="location-cards">
           {locationData?.map((item) => {
             return (
-              <FoodCard width="620px" height="762px">
+              <FoodCard width="620px" height="780px">
                 <img src={item?.image} className="card-pic" />
                 <div className="card-content">
                   <h4> {item?.header} </h4>
@@ -155,13 +155,23 @@ const HomePage = () => {
                   </div>
                   <div className="location-opening-hours">
                     <img src={ClockIcon} className="loc-elem-pic" />
-                    <p>Opening Hours </p>
+                    <p className="opening-hours">Opening Hours </p>
                     <img src={Divider} className="divider" />
                   </div>
-                  <div className="hours">
-                    {daysInWeek?.map((item) => {
+                  <div className="weekdays">
+                    {daysInWeek?.slice(0, 5).map((item) => {
                       return (
                         <div className="element">
+                          <p> {item?.name} </p>
+                          <p> {item?.time} </p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <div className="weekend">
+                    {daysInWeek?.slice(5, 7).map((item, index) => {
+                      return (
+                        <div className={index === 1 && "margin-left"}>
                           <p> {item?.name} </p>
                           <p> {item?.time} </p>
                         </div>
@@ -309,7 +319,7 @@ const locationData = [
 
 const daysInWeek = [
   {
-    name: "MANDAG",
+    name: "MÄNDAG",
     time: "09:00 - 17:00",
   },
 
@@ -334,12 +344,12 @@ const daysInWeek = [
   },
 
   {
-    name: "LORDAG",
+    name: "LÖRDAG",
     time: "09:00 - 17:00",
   },
 
   {
-    name: "SONDAG",
+    name: "SÖNDAG",
     time: "09:00 - 17:00",
   },
 ];
