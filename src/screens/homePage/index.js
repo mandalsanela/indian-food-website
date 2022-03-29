@@ -100,10 +100,7 @@ const HomePage = () => {
           <div className="food-cards">
             {foodData?.map((item, index) => {
               return (
-                <FoodCard
-                  width="300px"
-                  height={index !== 3 ? "481px" : "289px"}
-                >
+                <FoodCard width="80%" height="100%">
                   {item.image && <img src={item.image} className="card-pic" />}
                   <div className="card-content">
                     <div className="card-title">
@@ -112,7 +109,14 @@ const HomePage = () => {
                     <p className="card-time"> {item?.time} </p>
                     <hr size="1" />
                     <p className="card-text">{item?.text}</p>
-                    <button className="card-button">LÄS MER</button>
+                    {index === 1 ? (
+                      <div className="btn-las-row">
+                        <button className="card-button margin-right">LÄS MER</button>
+                        <button className="card-button">LÄS MER</button>
+                      </div>
+                    ) : (
+                      <button className="card-button">LÄS MER</button>
+                    )}
                   </div>
                 </FoodCard>
               );
@@ -131,7 +135,7 @@ const HomePage = () => {
         <div className="location-cards">
           {locationData?.map((item) => {
             return (
-              <FoodCard width="620px" height="780px">
+              <FoodCard height="100%">
                 <img src={item?.image} className="card-pic" />
                 <div className="card-content">
                   <h4> {item?.header} </h4>
@@ -204,7 +208,9 @@ const HomePage = () => {
                   <h3 className="history-card-time"> {item?.time} </h3>
                   <p className="history-card-subtitle">{item?.subtitle}</p>
                 </div>
-                <img src={item?.image} />
+                <div className="history-image">
+                  <img src={item?.image} />
+                </div>
               </div>
             );
           })}
@@ -218,7 +224,9 @@ const HomePage = () => {
         <img src={EventsVector} />
         <div className="about-us-content">
           <div className="about-us-left">
-            <img src={AboutUs1} className="about-us-picture" />
+            <div className="about-us-picture">
+              <img src={AboutUs1} />
+            </div>
             <div className="left-text">
               <h3 className="about-title">Always ready and prepared</h3>
               <img src={Line} className="line" />
@@ -243,7 +251,9 @@ const HomePage = () => {
                 id et cursus risus id sit mus neque ultrices a.
               </p>
             </div>
-            <img src={AboutUs2} className="about-us-picture" />
+            <div className="about-us-picture">
+              <img src={AboutUs2} />
+            </div>
           </div>
         </div>
         <div className="contact">

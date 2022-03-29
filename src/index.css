@@ -320,15 +320,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #1D1D1F;
+  background-color: #1d1d1f;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 20px;
 }
 
 @media only screen and (max-width: 1230px) {
   .food-card-wrapper {
     margin: 10px 0;
+    margin-top: 20px;
   }
 }
 
@@ -869,7 +871,7 @@
   margin-top: 20px;
   -ms-flex-item-align: center;
       align-self: center;
-  width: 83vw;
+  margin: 5vh 2vw;
 }
 
 .homepage-wrapper .events-vector .events-section .food-cards .btn-row {
@@ -896,8 +898,8 @@
 }
 
 .homepage-wrapper .events-vector .events-section .food-cards .card-pic {
-  width: 300px;
-  height: 192px;
+  width: 100%;
+  height: 100%;
 }
 
 .homepage-wrapper .events-vector .events-section .food-cards .card-content {
@@ -909,8 +911,7 @@
 }
 
 .homepage-wrapper .events-vector .events-section .food-cards .card-content .card-title {
-  width: 278px;
-  height: 48px;
+  width: 100%;
   text-align: left;
 }
 
@@ -921,6 +922,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #caab2a;
+  height: 100%;
 }
 
 .homepage-wrapper .events-vector .events-section .food-cards .card-content .card-time {
@@ -939,8 +941,25 @@
   line-height: 20px;
 }
 
+.homepage-wrapper .events-vector .events-section .food-cards .card-content .btn-las-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homepage-wrapper .events-vector .events-section .food-cards .card-content .btn-las-row .margin-right {
+  margin-right: 10px;
+}
+
 .homepage-wrapper .events-vector .events-section .food-cards .card-content .card-button {
-  width: 278px;
+  width: 100%;
   height: 44px;
   padding: 12px 8px 12px 8px;
   background-color: #caab2a;
@@ -1009,9 +1028,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 20px;
-  width: 92%;
-  padding: 0 70px;
+  margin: 5vh 2vw;
   -ms-flex-item-align: center;
       align-self: center;
 }
@@ -1021,9 +1038,12 @@
 }
 
 .homepage-wrapper .our-location .location-cards .card-pic {
-  width: 620px;
-  height: 280px;
-  margin-top: -3%;
+  width: 100%;
+  height: 260px;
+  min-height: 260px;
+  margin-top: -20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .homepage-wrapper .our-location .location-cards .card-content {
@@ -1034,6 +1054,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 90%;
+  padding-bottom: 20px;
 }
 
 .homepage-wrapper .our-location .location-cards .card-content h4 {
@@ -1063,7 +1085,7 @@
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
-  width: 564px;
+  width: 100%;
 }
 
 .homepage-wrapper .our-location .location-cards .card-content .location-row {
@@ -1120,6 +1142,7 @@
 
 .homepage-wrapper .our-location .location-cards .card-content .location-opening-hours .opening-hours {
   width: 100px;
+  white-space: nowrap;
 }
 
 .homepage-wrapper .our-location .location-cards .card-content .location-opening-hours .loc-elem-pic {
@@ -1129,7 +1152,7 @@
 }
 
 .homepage-wrapper .our-location .location-cards .card-content .location-opening-hours .divider {
-  width: 460px;
+  width: 70%;
   margin-left: 15px;
 }
 
@@ -1240,7 +1263,7 @@
 }
 
 .homepage-wrapper .history-section .history-pic {
-  width: 1335px;
+  width: 100%;
   margin-top: 25px;
 }
 
@@ -1268,11 +1291,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 450px;
+  width: 100%;
 }
 
-.homepage-wrapper .history-section .history-cards .history-card img {
-  width: 410px;
+.homepage-wrapper .history-section .history-cards .history-card .history-image {
+  padding-right: 20px;
+}
+
+.homepage-wrapper .history-section .history-cards .history-card .history-image img {
+  width: 100%;
   height: 360px;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -1286,7 +1313,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 425px;
+  width: 100%;
 }
 
 .homepage-wrapper .history-section .history-cards .history-card .history-card-text .history-card-title {
@@ -1312,7 +1339,7 @@
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
-  width: 400px;
+  width: 100%;
   height: 120px;
 }
 
@@ -1387,7 +1414,11 @@
 }
 
 .homepage-wrapper .about-us-section .about-us-content .about-us-picture {
-  width: 680px;
+  padding: 0 20px;
+}
+
+.homepage-wrapper .about-us-section .about-us-content .about-us-picture img {
+  width: 100%;
   height: 554px;
 }
 
@@ -1496,6 +1527,36 @@
   width: 50px;
 }
 
+@media only screen and (max-width: 1255px) {
+  .homepage-wrapper .history-section .history-pic {
+    width: 650px;
+  }
+  .homepage-wrapper .history-section .history-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .homepage-wrapper .history-section .history-cards .history-card {
+    margin-bottom: 15px;
+  }
+  .homepage-wrapper .about-us-section .about-us-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 1230px) {
   .homepage-wrapper .buttons-row {
     display: -webkit-box;
@@ -1521,6 +1582,46 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .homepage-wrapper .our-location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    padding: 0 70px;
+  }
+  .homepage-wrapper .our-location .subtitle {
+    text-align: center;
+  }
+  .homepage-wrapper .our-location h1 {
+    font-family: Libre Caslon Text;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .homepage-wrapper .our-location p {
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .homepage-wrapper .our-location img {
+    width: 160px;
+    height: 15px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
   .homepage-wrapper .our-location .location-cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1529,14 +1630,178 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 5vh 2vw;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .homepage-wrapper .our-location .location-cards .locations {
+    border-radius: 15px 15px 0 0;
+  }
+  .homepage-wrapper .our-location .location-cards .card-pic {
+    width: 100%;
+    height: 260px;
+    min-height: 260px;
+    margin-top: -20px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    padding-bottom: 20px;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content h4 {
+    font-family: IBM Plex Sans;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .card-title {
+    color: #caab2a;
+    font-family: Libre Caslon Text;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .card-title h2 {
+    margin: 0;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .card-subtitle {
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    width: 100%;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .location-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .location-row .loc-elements {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .location-row .loc-elements p {
+    font-size: 14px;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .location-row .loc-elements .loc-elem-pic {
+    width: 12px;
+    height: 14px;
+    margin-right: 5px;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .location-opening-hours {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .homepage-wrapper .history-section .history-pic {
+  .homepage-wrapper .our-location .location-cards .card-content .location-opening-hours .opening-hours {
+    width: 100px;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .location-opening-hours .loc-elem-pic {
+    width: 12px;
+    height: 14px;
+    margin-right: 5px;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .location-opening-hours .divider {
+    width: 460px;
+    margin-left: 15px;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .weekdays {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .weekend {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .weekend .margin-left {
+    margin-left: 2em;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .location-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 232px;
+    height: 56px;
+    padding: 16px;
+    background-color: #caab2a;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: none;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .location-button img {
+    width: 20px;
+    height: 20px;
+  }
+  .homepage-wrapper .our-location .location-cards .card-content .location-button p {
+    width: 100px;
+    text-align: start;
+    margin-left: 10px;
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+  }
+  .homepage-wrapper .our-location .location-cards .history-section .history-pic {
     width: 650px;
   }
-  .homepage-wrapper .history-section .history-cards {
+  .homepage-wrapper .our-location .location-cards .history-section .history-cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1548,10 +1813,10 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .homepage-wrapper .history-section .history-cards .history-card {
+  .homepage-wrapper .our-location .location-cards .history-section .history-cards .history-card {
     margin-bottom: 15px;
   }
-  .homepage-wrapper .about-us-section .about-us-content {
+  .homepage-wrapper .our-location .location-cards .about-us-section .about-us-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
