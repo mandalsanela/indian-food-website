@@ -1,0 +1,14 @@
+.food-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1d1f;
+  align-items: center;
+  margin: 0 20px;
+}
+
+@media only screen and(max-width:1230px) {
+  .food-card-wrapper {
+    margin: 10px 0;
+    margin-top: 20px;
+  }
+}

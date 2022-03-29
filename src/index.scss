@@ -1,0 +1,19 @@
+@import "./components/index";
+@import "./screens/index";
+@import "./UI/index";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: IBM Plex Sans;
+    src: url("./assets/fonts/IBMPlexSans-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: Libre Caslon Text;
+    src: url("./assets/fonts/LibreCaslonText-Regular.ttf");
+  }
+  
